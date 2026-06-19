@@ -1,0 +1,37 @@
+[
+  {
+    "borough": "Bronx",
+    "business_density": 80.94,
+    "population_density": 12339,
+    "median_income": 49000,
+    "education_share": 27.7
+  },
+  {
+    "borough": "Brooklyn",
+    "business_density": 98.52,
+    "population_density": 15172,
+    "median_income": 69727,
+    "education_share": 40.5
+  },
+  {
+    "borough": "Manhattan",
+    "business_density": 400.93,
+    "population_density": 29729,
+    "median_income": 99880,
+    "education_share": 66.5
+  },
+  {
+    "borough": "Queens",
+    "business_density": 36.38,
+    "population_density": 8243,
+    "median_income": 74737,
+    "education_share": 35.3
+  },
+  {
+    "borough": "Staten Island",
+    "business_density": 23.48,
+    "population_density": 3277,
+    "median_income": 96787,
+    "education_share": 34.8
+  }
+]

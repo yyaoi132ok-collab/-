@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060708"/>
+      <stop offset="1" stop-color="#111419"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="35%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#d7b56d" stop-opacity=".25"/>
+      <stop offset=".48" stop-color="#33475a" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g fill="none" stroke="#d7b56d" stroke-width="3" opacity=".62">
+    <path d="M176 524C338 410 456 384 596 426s248 12 430-154"/>
+    <path d="M176 402c176-84 328-76 456 10s242 70 394-26" opacity=".42"/>
+    <path d="M176 284c136 18 246 76 344 168 128 120 290 120 506-10" opacity=".3"/>
+  </g>
+  <g transform="translate(206 168)">
+    <text x="0" y="0" fill="#f2d58a" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">UNICEF AUSTRALIA</text>
+    <text x="0" y="56" fill="#b7a06d" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">DONATION BEHAVIOUR / ASK LADDER</text>
+  </g>
+  <g transform="translate(214 464)" fill="#090806" stroke="#d7b56d">
+    <rect width="112" height="72" rx="8"/><rect x="148" y="-38" width="112" height="110" rx="8"/><rect x="296" y="-104" width="112" height="176" rx="8"/>
+  </g>
+  <text x="74" y="626" fill="#d7b56d" opacity=".8" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">SEGMENTED DONATION ANALYTICS</text>
+</svg>

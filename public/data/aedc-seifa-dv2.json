@@ -1,0 +1,2282 @@
+[
+  {
+    "lga": "Tiwi Islands",
+    "dv2": 81.25,
+    "irsd": 564.0
+  },
+  {
+    "lga": "Anangu Pitjantjatjara Yunkunyt",
+    "dv2": 77.7777777777778,
+    "irsd": 496.0
+  },
+  {
+    "lga": "MacDonnell",
+    "dv2": 74.5454545454545,
+    "irsd": 566.0
+  },
+  {
+    "lga": "Barkly",
+    "dv2": 60.6060606060606,
+    "irsd": 670.0
+  },
+  {
+    "lga": "West Daly",
+    "dv2": 52.5423728813559,
+    "irsd": 439.0
+  },
+  {
+    "lga": "Halls Creek",
+    "dv2": 51.4285714285714,
+    "irsd": 540.0
+  },
+  {
+    "lga": "Cherbourg",
+    "dv2": 43.75,
+    "irsd": 498.0
+  },
+  {
+    "lga": "Roper Gulf",
+    "dv2": 41.9354838709677,
+    "irsd": 534.0
+  },
+  {
+    "lga": "Cook",
+    "dv2": 41.3333333333333,
+    "irsd": 913.0
+  },
+  {
+    "lga": "Bourke",
+    "dv2": 40.0,
+    "irsd": 947.0
+  },
+  {
+    "lga": "Meekatharra",
+    "dv2": 38.8888888888889,
+    "irsd": 848.0
+  },
+  {
+    "lga": "East Arnhem",
+    "dv2": 38.2352941176471,
+    "irsd": 486.0
+  },
+  {
+    "lga": "Brewarrina",
+    "dv2": 38.0952380952381,
+    "irsd": 818.0
+  },
+  {
+    "lga": "Victoria Daly",
+    "dv2": 37.5,
+    "irsd": 590.0
+  },
+  {
+    "lga": "Northern Peninsula Area",
+    "dv2": 34.6938775510204,
+    "irsd": 702.0
+  },
+  {
+    "lga": "Toodyay",
+    "dv2": 34.375,
+    "irsd": 986.0
+  },
+  {
+    "lga": "West Coast",
+    "dv2": 34.0425531914894,
+    "irsd": 861.0
+  },
+  {
+    "lga": "Ravensthorpe",
+    "dv2": 33.3333333333333,
+    "irsd": 1002.0
+  },
+  {
+    "lga": "Wickepin",
+    "dv2": 33.3333333333333,
+    "irsd": 994.0
+  },
+  {
+    "lga": "Cobar",
+    "dv2": 31.9148936170213,
+    "irsd": 965.0
+  },
+  {
+    "lga": "Coonamble",
+    "dv2": 31.5789473684211,
+    "irsd": 883.0
+  },
+  {
+    "lga": "Napranum",
+    "dv2": 31.5789473684211,
+    "irsd": 623.0
+  },
+  {
+    "lga": "Yarrabah",
+    "dv2": 31.25,
+    "irsd": 512.0
+  },
+  {
+    "lga": "Derby-West Kimberley",
+    "dv2": 30.6306306306306,
+    "irsd": 734.0
+  },
+  {
+    "lga": "Murweh",
+    "dv2": 29.8245614035088,
+    "irsd": 948.0
+  },
+  {
+    "lga": "Balranald",
+    "dv2": 29.4117647058824,
+    "irsd": 960.0
+  },
+  {
+    "lga": "Woorabinda",
+    "dv2": 28.5714285714286,
+    "irsd": 492.0
+  },
+  {
+    "lga": "Palm Island",
+    "dv2": 27.7777777777778,
+    "irsd": 567.0
+  },
+  {
+    "lga": "Wongan-Ballidu",
+    "dv2": 26.6666666666667,
+    "irsd": 963.0
+  },
+  {
+    "lga": "Carpentaria",
+    "dv2": 26.3157894736842,
+    "irsd": 851.0
+  },
+  {
+    "lga": "Wentworth",
+    "dv2": 25.9615384615385,
+    "irsd": 974.0
+  },
+  {
+    "lga": "North Burnett",
+    "dv2": 25.8064516129032,
+    "irsd": 902.0
+  },
+  {
+    "lga": "Wyndham-East Kimberley",
+    "dv2": 25.1908396946565,
+    "irsd": 899.0
+  },
+  {
+    "lga": "Torres",
+    "dv2": 24.1935483870968,
+    "irsd": 904.0
+  },
+  {
+    "lga": "Mareeba",
+    "dv2": 23.8297872340426,
+    "irsd": 937.0
+  },
+  {
+    "lga": "Flinders (Qld)",
+    "dv2": 23.8095238095238,
+    "irsd": 970.0
+  },
+  {
+    "lga": "Hope Vale",
+    "dv2": 23.8095238095238,
+    "irsd": 631.0
+  },
+  {
+    "lga": "Palmerston",
+    "dv2": 23.36,
+    "irsd": 1009.0
+  },
+  {
+    "lga": "East Pilbara",
+    "dv2": 23.0769230769231,
+    "irsd": 939.0
+  },
+  {
+    "lga": "Light",
+    "dv2": 22.9166666666667,
+    "irsd": 1027.0
+  },
+  {
+    "lga": "Moree Plains",
+    "dv2": 22.7272727272727,
+    "irsd": 940.0
+  },
+  {
+    "lga": "Tenterfield",
+    "dv2": 22.6415094339623,
+    "irsd": 920.0
+  },
+  {
+    "lga": "Kyogle",
+    "dv2": 22.2222222222222,
+    "irsd": 921.0
+  },
+  {
+    "lga": "Rockhampton",
+    "dv2": 22.0630372492837,
+    "irsd": 949.0
+  },
+  {
+    "lga": "Port Pirie",
+    "dv2": 22.0512820512821,
+    "irsd": 889.0
+  },
+  {
+    "lga": "Berri Barmera",
+    "dv2": 21.7391304347826,
+    "irsd": 907.0
+  },
+  {
+    "lga": "Clare and Gilbert Valleys",
+    "dv2": 21.4285714285714,
+    "irsd": 998.0
+  },
+  {
+    "lga": "Torres Strait Island",
+    "dv2": 21.25,
+    "irsd": 649.0
+  },
+  {
+    "lga": "Muswellbrook",
+    "dv2": 21.2389380530973,
+    "irsd": 937.0
+  },
+  {
+    "lga": "Plantagenet",
+    "dv2": 21.1538461538462,
+    "irsd": 949.0
+  },
+  {
+    "lga": "Dandaragan",
+    "dv2": 21.0526315789474,
+    "irsd": 995.0
+  },
+  {
+    "lga": "Barunga West",
+    "dv2": 20.8333333333333,
+    "irsd": 950.0
+  },
+  {
+    "lga": "Yankalilla",
+    "dv2": 20.8333333333333,
+    "irsd": 978.0
+  },
+  {
+    "lga": "Murray Bridge",
+    "dv2": 20.7547169811321,
+    "irsd": 891.0
+  },
+  {
+    "lga": "Playford",
+    "dv2": 20.7350901525659,
+    "irsd": 852.0
+  },
+  {
+    "lga": "Alice Springs",
+    "dv2": 20.6489675516224,
+    "irsd": 994.0
+  },
+  {
+    "lga": "Central Goldfields",
+    "dv2": 20.5128205128205,
+    "irsd": 898.0
+  },
+  {
+    "lga": "Devonport",
+    "dv2": 20.4166666666667,
+    "irsd": 906.0
+  },
+  {
+    "lga": "Break O'Day",
+    "dv2": 20.3703703703704,
+    "irsd": 911.0
+  },
+  {
+    "lga": "Litchfield",
+    "dv2": 20.3125,
+    "irsd": 1030.0
+  },
+  {
+    "lga": "Northam",
+    "dv2": 20.3007518796992,
+    "irsd": 938.0
+  },
+  {
+    "lga": "Brighton",
+    "dv2": 20.1365187713311,
+    "irsd": 885.0
+  },
+  {
+    "lga": "Tablelands",
+    "dv2": 20.0,
+    "irsd": 955.0
+  },
+  {
+    "lga": "Richmond Valley",
+    "dv2": 19.921875,
+    "irsd": 924.0
+  },
+  {
+    "lga": "Northern Grampians",
+    "dv2": 19.7530864197531,
+    "irsd": 951.0
+  },
+  {
+    "lga": "Campaspe",
+    "dv2": 19.6125907990315,
+    "irsd": 965.0
+  },
+  {
+    "lga": "Merredin",
+    "dv2": 19.3548387096774,
+    "irsd": 971.0
+  },
+  {
+    "lga": "Unincorporated SA",
+    "dv2": 19.2307692307692,
+    "irsd": 905.0
+  },
+  {
+    "lga": "Nambucca Valley",
+    "dv2": 19.1489361702128,
+    "irsd": 920.0
+  },
+  {
+    "lga": "Ceduna",
+    "dv2": 19.1489361702128,
+    "irsd": 943.0
+  },
+  {
+    "lga": "Paroo",
+    "dv2": 19.047619047619,
+    "irsd": 866.0
+  },
+  {
+    "lga": "Kempsey",
+    "dv2": 18.8925081433225,
+    "irsd": 903.0
+  },
+  {
+    "lga": "Pingelly",
+    "dv2": 18.75,
+    "irsd": 907.0
+  },
+  {
+    "lga": "Bunbury",
+    "dv2": 18.5915492957746,
+    "irsd": 944.0
+  },
+  {
+    "lga": "Lachlan",
+    "dv2": 18.5567010309278,
+    "irsd": 950.0
+  },
+  {
+    "lga": "Katherine",
+    "dv2": 18.4931506849315,
+    "irsd": 961.0
+  },
+  {
+    "lga": "Cassowary Coast",
+    "dv2": 18.3908045977011,
+    "irsd": 929.0
+  },
+  {
+    "lga": "Dorset",
+    "dv2": 18.3333333333333,
+    "irsd": 932.0
+  },
+  {
+    "lga": "Cleve",
+    "dv2": 18.1818181818182,
+    "irsd": 989.0
+  },
+  {
+    "lga": "Goyder",
+    "dv2": 18.1818181818182,
+    "irsd": 947.0
+  },
+  {
+    "lga": "Kojonup",
+    "dv2": 18.1818181818182,
+    "irsd": 997.0
+  },
+  {
+    "lga": "Narrogin",
+    "dv2": 18.0327868852459,
+    "irsd": 964.0
+  },
+  {
+    "lga": "Renmark Paringa",
+    "dv2": 18.0,
+    "irsd": 923.0
+  },
+  {
+    "lga": "Katanning",
+    "dv2": 18.0,
+    "irsd": 907.0
+  },
+  {
+    "lga": "Port Lincoln",
+    "dv2": 17.877094972067,
+    "irsd": 948.0
+  },
+  {
+    "lga": "Hindmarsh",
+    "dv2": 17.7777777777778,
+    "irsd": 940.0
+  },
+  {
+    "lga": "Benalla",
+    "dv2": 17.6991150442478,
+    "irsd": 968.0
+  },
+  {
+    "lga": "Kwinana",
+    "dv2": 17.5937904269081,
+    "irsd": 971.0
+  },
+  {
+    "lga": "Wakefield",
+    "dv2": 17.5675675675676,
+    "irsd": 921.0
+  },
+  {
+    "lga": "Southern Downs",
+    "dv2": 17.5609756097561,
+    "irsd": 939.0
+  },
+  {
+    "lga": "Mount Remarkable",
+    "dv2": 17.3913043478261,
+    "irsd": 974.0
+  },
+  {
+    "lga": "Mid Murray",
+    "dv2": 17.3333333333333,
+    "irsd": 914.0
+  },
+  {
+    "lga": "Townsville",
+    "dv2": 17.2427493047279,
+    "irsd": 990.0
+  },
+  {
+    "lga": "Cessnock",
+    "dv2": 17.103620474407,
+    "irsd": 939.0
+  },
+  {
+    "lga": "Fraser Coast",
+    "dv2": 17.0385395537525,
+    "irsd": 915.0
+  },
+  {
+    "lga": "Port Augusta",
+    "dv2": 16.9934640522876,
+    "irsd": 889.0
+  },
+  {
+    "lga": "Mount Isa",
+    "dv2": 16.9381107491857,
+    "irsd": 972.0
+  },
+  {
+    "lga": "Latrobe (Vic.)",
+    "dv2": 16.8316831683168,
+    "irsd": 931.0
+  },
+  {
+    "lga": "South Burnett",
+    "dv2": 16.6666666666667,
+    "irsd": 907.0
+  },
+  {
+    "lga": "Streaky Bay",
+    "dv2": 16.6666666666667,
+    "irsd": 1000.0
+  },
+  {
+    "lga": "Boyup Brook",
+    "dv2": 16.6666666666667,
+    "irsd": 995.0
+  },
+  {
+    "lga": "Glamorgan-Spring Bay",
+    "dv2": 16.6666666666667,
+    "irsd": 950.0
+  },
+  {
+    "lga": "Southern Midlands",
+    "dv2": 16.6666666666667,
+    "irsd": 951.0
+  },
+  {
+    "lga": "Bundaberg",
+    "dv2": 16.6175024582104,
+    "irsd": 924.0
+  },
+  {
+    "lga": "Darwin",
+    "dv2": 16.4730728616684,
+    "irsd": 1027.0
+  },
+  {
+    "lga": "Somerset",
+    "dv2": 16.3398692810458,
+    "irsd": 944.0
+  },
+  {
+    "lga": "Hume",
+    "dv2": 16.1978361669243,
+    "irsd": 941.0
+  },
+  {
+    "lga": "Burdekin",
+    "dv2": 16.0919540229885,
+    "irsd": 966.0
+  },
+  {
+    "lga": "Edward River",
+    "dv2": 16.0,
+    "irsd": 966.0
+  },
+  {
+    "lga": "Walcha",
+    "dv2": 16.0,
+    "irsd": 992.0
+  },
+  {
+    "lga": "Port Hedland",
+    "dv2": 16.0,
+    "irsd": 1011.0
+  },
+  {
+    "lga": "Bathurst Regional",
+    "dv2": 15.9844054580897,
+    "irsd": 991.0
+  },
+  {
+    "lga": "Parkes",
+    "dv2": 15.9509202453988,
+    "irsd": 946.0
+  },
+  {
+    "lga": "Greater Dandenong",
+    "dv2": 15.9318048206937,
+    "irsd": 887.0
+  },
+  {
+    "lga": "Walgett",
+    "dv2": 15.9090909090909,
+    "irsd": 888.0
+  },
+  {
+    "lga": "Brimbank",
+    "dv2": 15.6626506024096,
+    "irsd": 912.0
+  },
+  {
+    "lga": "Toowoomba",
+    "dv2": 15.6620553359684,
+    "irsd": 979.0
+  },
+  {
+    "lga": "Western Downs",
+    "dv2": 15.6387665198238,
+    "irsd": 946.0
+  },
+  {
+    "lga": "Victor Harbor",
+    "dv2": 15.625,
+    "irsd": 962.0
+  },
+  {
+    "lga": "Mount Gambier",
+    "dv2": 15.5709342560554,
+    "irsd": 924.0
+  },
+  {
+    "lga": "Gilgandra",
+    "dv2": 15.5555555555556,
+    "irsd": 930.0
+  },
+  {
+    "lga": "Logan",
+    "dv2": 15.5261525739094,
+    "irsd": 944.0
+  },
+  {
+    "lga": "Gwydir",
+    "dv2": 15.5172413793103,
+    "irsd": 957.0
+  },
+  {
+    "lga": "Fairfield",
+    "dv2": 15.4512306289881,
+    "irsd": 814.0
+  },
+  {
+    "lga": "Ipswich",
+    "dv2": 15.4103852596315,
+    "irsd": 958.0
+  },
+  {
+    "lga": "Kalgoorlie-Boulder",
+    "dv2": 15.4004106776181,
+    "irsd": 1008.0
+  },
+  {
+    "lga": "Southern Mallee",
+    "dv2": 15.3846153846154,
+    "irsd": 997.0
+  },
+  {
+    "lga": "Salisbury",
+    "dv2": 15.2459016393443,
+    "irsd": 904.0
+  },
+  {
+    "lga": "Eurobodalla",
+    "dv2": 15.2173913043478,
+    "irsd": 985.0
+  },
+  {
+    "lga": "Gosnells",
+    "dv2": 15.1636990235497,
+    "irsd": 975.0
+  },
+  {
+    "lga": "Burnie",
+    "dv2": 15.0862068965517,
+    "irsd": 920.0
+  },
+  {
+    "lga": "Alexandrina",
+    "dv2": 15.0,
+    "irsd": 988.0
+  },
+  {
+    "lga": "Grant",
+    "dv2": 14.9425287356322,
+    "irsd": 1026.0
+  },
+  {
+    "lga": "Mackay",
+    "dv2": 14.9367088607595,
+    "irsd": 999.0
+  },
+  {
+    "lga": "Lismore",
+    "dv2": 14.8541114058355,
+    "irsd": 966.0
+  },
+  {
+    "lga": "Douglas",
+    "dv2": 14.7540983606557,
+    "irsd": 979.0
+  },
+  {
+    "lga": "Inverell",
+    "dv2": 14.7368421052632,
+    "irsd": 928.0
+  },
+  {
+    "lga": "Griffith",
+    "dv2": 14.6814404432133,
+    "irsd": 974.0
+  },
+  {
+    "lga": "Strathfield",
+    "dv2": 14.6572104018913,
+    "irsd": 1011.0
+  },
+  {
+    "lga": "Kangaroo Island",
+    "dv2": 14.6341463414634,
+    "irsd": 991.0
+  },
+  {
+    "lga": "Lower Eyre Peninsula",
+    "dv2": 14.5454545454545,
+    "irsd": 1033.0
+  },
+  {
+    "lga": "Maitland",
+    "dv2": 14.4557823129252,
+    "irsd": 988.0
+  },
+  {
+    "lga": "Whyalla",
+    "dv2": 14.4486692015209,
+    "irsd": 883.0
+  },
+  {
+    "lga": "Berrigan",
+    "dv2": 14.4444444444444,
+    "irsd": 966.0
+  },
+  {
+    "lga": "Warrumbungle Shire",
+    "dv2": 14.4329896907216,
+    "irsd": 927.0
+  },
+  {
+    "lga": "Greater Shepparton",
+    "dv2": 14.3774069319641,
+    "irsd": 944.0
+  },
+  {
+    "lga": "Cairns",
+    "dv2": 14.3692157817828,
+    "irsd": 981.0
+  },
+  {
+    "lga": "Tamworth Regional",
+    "dv2": 14.3396226415094,
+    "irsd": 961.0
+  },
+  {
+    "lga": "Dubbo Regional",
+    "dv2": 14.3243243243243,
+    "irsd": 985.0
+  },
+  {
+    "lga": "Murrumbidgee",
+    "dv2": 14.2857142857143,
+    "irsd": 983.0
+  },
+  {
+    "lga": "Derwent Valley",
+    "dv2": 14.2857142857143,
+    "irsd": 913.0
+  },
+  {
+    "lga": "Liverpool",
+    "dv2": 14.2766295707472,
+    "irsd": 931.0
+  },
+  {
+    "lga": "Albany",
+    "dv2": 14.1255605381166,
+    "irsd": 987.0
+  },
+  {
+    "lga": "Blayney",
+    "dv2": 14.1025641025641,
+    "irsd": 991.0
+  },
+  {
+    "lga": "George Town",
+    "dv2": 14.0845070422535,
+    "irsd": 860.0
+  },
+  {
+    "lga": "Buloke",
+    "dv2": 14.0,
+    "irsd": 975.0
+  },
+  {
+    "lga": "Moreton Bay",
+    "dv2": 13.9652555236971,
+    "irsd": 992.0
+  },
+  {
+    "lga": "Broome",
+    "dv2": 13.9622641509434,
+    "irsd": 962.0
+  },
+  {
+    "lga": "Towong",
+    "dv2": 13.953488372093,
+    "irsd": 1001.0
+  },
+  {
+    "lga": "Gladstone",
+    "dv2": 13.8580931263858,
+    "irsd": 954.0
+  },
+  {
+    "lga": "Lithgow",
+    "dv2": 13.8248847926267,
+    "irsd": 935.0
+  },
+  {
+    "lga": "Baw Baw",
+    "dv2": 13.7984496124031,
+    "irsd": 1003.0
+  },
+  {
+    "lga": "Balonne",
+    "dv2": 13.7931034482759,
+    "irsd": 943.0
+  },
+  {
+    "lga": "Central Highlands (Tas.)",
+    "dv2": 13.7931034482759,
+    "irsd": 911.0
+  },
+  {
+    "lga": "Mitchell",
+    "dv2": 13.7518684603886,
+    "irsd": 1000.0
+  },
+  {
+    "lga": "Albury",
+    "dv2": 13.7345679012346,
+    "irsd": 968.0
+  },
+  {
+    "lga": "Glenorchy",
+    "dv2": 13.7044967880086,
+    "irsd": 927.0
+  },
+  {
+    "lga": "Armidale Regional",
+    "dv2": 13.6807817589577,
+    "irsd": 980.0
+  },
+  {
+    "lga": "Longreach",
+    "dv2": 13.6363636363636,
+    "irsd": 1003.0
+  },
+  {
+    "lga": "Kentish",
+    "dv2": 13.6363636363636,
+    "irsd": 953.0
+  },
+  {
+    "lga": "Corangamite",
+    "dv2": 13.6094674556213,
+    "irsd": 985.0
+  },
+  {
+    "lga": "South Gippsland",
+    "dv2": 13.5922330097087,
+    "irsd": 1003.0
+  },
+  {
+    "lga": "Ashburton",
+    "dv2": 13.5714285714286,
+    "irsd": 1024.0
+  },
+  {
+    "lga": "Oberon",
+    "dv2": 13.5593220338983,
+    "irsd": 978.0
+  },
+  {
+    "lga": "Melton",
+    "dv2": 13.5486265775798,
+    "irsd": 985.0
+  },
+  {
+    "lga": "Snowy Valleys",
+    "dv2": 13.5294117647059,
+    "irsd": 952.0
+  },
+  {
+    "lga": "Port Adelaide Enfield",
+    "dv2": 13.4228187919463,
+    "irsd": 953.0
+  },
+  {
+    "lga": "Whitsunday",
+    "dv2": 13.3640552995392,
+    "irsd": 969.0
+  },
+  {
+    "lga": "Wellington",
+    "dv2": 13.3333333333333,
+    "irsd": 973.0
+  },
+  {
+    "lga": "Blackall Tambo",
+    "dv2": 13.3333333333333,
+    "irsd": 961.0
+  },
+  {
+    "lga": "Brookton",
+    "dv2": 13.3333333333333,
+    "irsd": 944.0
+  },
+  {
+    "lga": "Unincorporated ACT",
+    "dv2": 13.2863340563991,
+    "irsd": 1071.0
+  },
+  {
+    "lga": "Greater Bendigo",
+    "dv2": 13.28125,
+    "irsd": 985.0
+  },
+  {
+    "lga": "Adelaide",
+    "dv2": 13.2530120481928,
+    "irsd": 1002.0
+  },
+  {
+    "lga": "Horsham",
+    "dv2": 13.1914893617021,
+    "irsd": 990.0
+  },
+  {
+    "lga": "Loxton Waikerie",
+    "dv2": 13.1147540983607,
+    "irsd": 958.0
+  },
+  {
+    "lga": "Shoalhaven",
+    "dv2": 13.0755064456722,
+    "irsd": 980.0
+  },
+  {
+    "lga": "Campbelltown (NSW)",
+    "dv2": 13.022113022113,
+    "irsd": 947.0
+  },
+  {
+    "lga": "Bass Coast",
+    "dv2": 13.0177514792899,
+    "irsd": 993.0
+  },
+  {
+    "lga": "Gympie",
+    "dv2": 12.9943502824859,
+    "irsd": 930.0
+  },
+  {
+    "lga": "Port Macquarie-Hastings",
+    "dv2": 12.9607609988109,
+    "irsd": 985.0
+  },
+  {
+    "lga": "Wagga Wagga",
+    "dv2": 12.9469790382244,
+    "irsd": 989.0
+  },
+  {
+    "lga": "West Wimmera",
+    "dv2": 12.9032258064516,
+    "irsd": 991.0
+  },
+  {
+    "lga": "Canterbury-Bankstown",
+    "dv2": 12.8748928877464,
+    "irsd": 917.0
+  },
+  {
+    "lga": "Leeton",
+    "dv2": 12.7659574468085,
+    "irsd": 949.0
+  },
+  {
+    "lga": "Waroona",
+    "dv2": 12.7659574468085,
+    "irsd": 936.0
+  },
+  {
+    "lga": "Greater Geraldton",
+    "dv2": 12.7579737335835,
+    "irsd": 965.0
+  },
+  {
+    "lga": "Huon Valley",
+    "dv2": 12.7167630057803,
+    "irsd": 974.0
+  },
+  {
+    "lga": "Carnarvon",
+    "dv2": 12.6984126984127,
+    "irsd": 926.0
+  },
+  {
+    "lga": "East Gippsland",
+    "dv2": 12.6829268292683,
+    "irsd": 963.0
+  },
+  {
+    "lga": "Swan Hill",
+    "dv2": 12.6696832579186,
+    "irsd": 941.0
+  },
+  {
+    "lga": "Wangaratta",
+    "dv2": 12.5382262996942,
+    "irsd": 988.0
+  },
+  {
+    "lga": "Mid-Coast",
+    "dv2": 12.5304136253041,
+    "irsd": 943.0
+  },
+  {
+    "lga": "Forbes",
+    "dv2": 12.5,
+    "irsd": 969.0
+  },
+  {
+    "lga": "Cunderdin",
+    "dv2": 12.5,
+    "irsd": 1008.0
+  },
+  {
+    "lga": "Nannup",
+    "dv2": 12.5,
+    "irsd": 978.0
+  },
+  {
+    "lga": "Launceston",
+    "dv2": 12.4645892351275,
+    "irsd": 939.0
+  },
+  {
+    "lga": "Melbourne",
+    "dv2": 12.379421221865,
+    "irsd": 1017.0
+  },
+  {
+    "lga": "Glen Innes Severn",
+    "dv2": 12.3595505617978,
+    "irsd": 906.0
+  },
+  {
+    "lga": "Narromine",
+    "dv2": 12.3456790123457,
+    "irsd": 958.0
+  },
+  {
+    "lga": "Cumberland",
+    "dv2": 12.3340887018453,
+    "irsd": 904.0
+  },
+  {
+    "lga": "Coorong",
+    "dv2": 12.2448979591837,
+    "irsd": 939.0
+  },
+  {
+    "lga": "Onkaparinga",
+    "dv2": 12.2294916960242,
+    "irsd": 987.0
+  },
+  {
+    "lga": "Golden Plains",
+    "dv2": 12.1739130434783,
+    "irsd": 1040.0
+  },
+  {
+    "lga": "Orange",
+    "dv2": 12.0860927152318,
+    "irsd": 997.0
+  },
+  {
+    "lga": "Blacktown",
+    "dv2": 12.0843332190607,
+    "irsd": 987.0
+  },
+  {
+    "lga": "Narrandera",
+    "dv2": 12.0481927710843,
+    "irsd": 929.0
+  },
+  {
+    "lga": "Yorke Peninsula",
+    "dv2": 12.0481927710843,
+    "irsd": 952.0
+  },
+  {
+    "lga": "Penrith",
+    "dv2": 11.9733146067416,
+    "irsd": 991.0
+  },
+  {
+    "lga": "Charters Towers",
+    "dv2": 11.9047619047619,
+    "irsd": 933.0
+  },
+  {
+    "lga": "Moreland",
+    "dv2": 11.9031607262946,
+    "irsd": 1027.0
+  },
+  {
+    "lga": "Goondiwindi",
+    "dv2": 11.8881118881119,
+    "irsd": 965.0
+  },
+  {
+    "lga": "Yarriambiack",
+    "dv2": 11.864406779661,
+    "irsd": 946.0
+  },
+  {
+    "lga": "Greater Hume Shire",
+    "dv2": 11.8518518518519,
+    "irsd": 999.0
+  },
+  {
+    "lga": "Circular Head",
+    "dv2": 11.8421052631579,
+    "irsd": 943.0
+  },
+  {
+    "lga": "Livingstone",
+    "dv2": 11.7913832199546,
+    "irsd": 1005.0
+  },
+  {
+    "lga": "Central Highlands (Qld)",
+    "dv2": 11.7647058823529,
+    "irsd": 996.0
+  },
+  {
+    "lga": "Dardanup",
+    "dv2": 11.7073170731707,
+    "irsd": 1006.0
+  },
+  {
+    "lga": "Cootamundra-Gundagai Regional",
+    "dv2": 11.7021276595745,
+    "irsd": 953.0
+  },
+  {
+    "lga": "Glenelg",
+    "dv2": 11.7021276595745,
+    "irsd": 952.0
+  },
+  {
+    "lga": "Moorabool",
+    "dv2": 11.6945107398568,
+    "irsd": 1017.0
+  },
+  {
+    "lga": "Mildura",
+    "dv2": 11.6923076923077,
+    "irsd": 940.0
+  },
+  {
+    "lga": "Tweed",
+    "dv2": 11.6396761133603,
+    "irsd": 989.0
+  },
+  {
+    "lga": "Tatiara",
+    "dv2": 11.5942028985507,
+    "irsd": 982.0
+  },
+  {
+    "lga": "West Torrens",
+    "dv2": 11.5843270868825,
+    "irsd": 1015.0
+  },
+  {
+    "lga": "Wyndham",
+    "dv2": 11.4957264957265,
+    "irsd": 1006.0
+  },
+  {
+    "lga": "Moira",
+    "dv2": 11.4906832298137,
+    "irsd": 958.0
+  },
+  {
+    "lga": "Lockyer Valley",
+    "dv2": 11.4649681528662,
+    "irsd": 948.0
+  },
+  {
+    "lga": "Ballarat",
+    "dv2": 11.4503816793893,
+    "irsd": 986.0
+  },
+  {
+    "lga": "Kalamunda",
+    "dv2": 11.3333333333333,
+    "irsd": 1034.0
+  },
+  {
+    "lga": "Cloncurry",
+    "dv2": 11.3207547169811,
+    "irsd": 965.0
+  },
+  {
+    "lga": "Armadale",
+    "dv2": 11.3113735239279,
+    "irsd": 990.0
+  },
+  {
+    "lga": "Chittering",
+    "dv2": 11.2903225806452,
+    "irsd": 1030.0
+  },
+  {
+    "lga": "Yarra",
+    "dv2": 11.2595419847328,
+    "irsd": 1046.0
+  },
+  {
+    "lga": "Rockingham",
+    "dv2": 11.2324492979719,
+    "irsd": 989.0
+  },
+  {
+    "lga": "Campbelltown (SA)",
+    "dv2": 11.1888111888112,
+    "irsd": 1021.0
+  },
+  {
+    "lga": "Mount Alexander",
+    "dv2": 11.1764705882353,
+    "irsd": 1007.0
+  },
+  {
+    "lga": "Redland",
+    "dv2": 11.1686816350029,
+    "irsd": 1024.0
+  },
+  {
+    "lga": "Central Coast (Tas.)",
+    "dv2": 11.1627906976744,
+    "irsd": 958.0
+  },
+  {
+    "lga": "Naracoorte Lucindale",
+    "dv2": 11.1111111111111,
+    "irsd": 978.0
+  },
+  {
+    "lga": "Ararat",
+    "dv2": 11.0169491525424,
+    "irsd": 955.0
+  },
+  {
+    "lga": "Shellharbour",
+    "dv2": 11.0112359550562,
+    "irsd": 983.0
+  },
+  {
+    "lga": "West Tamar",
+    "dv2": 10.989010989011,
+    "irsd": 1004.0
+  },
+  {
+    "lga": "Queanbeyan-Palerang Regional",
+    "dv2": 10.9375,
+    "irsd": 1061.0
+  },
+  {
+    "lga": "Serpentine-Jarrahdale",
+    "dv2": 10.9185441941075,
+    "irsd": 1028.0
+  },
+  {
+    "lga": "Southern Grampians",
+    "dv2": 10.8433734939759,
+    "irsd": 994.0
+  },
+  {
+    "lga": "Harvey",
+    "dv2": 10.831234256927,
+    "irsd": 998.0
+  },
+  {
+    "lga": "Bellingen",
+    "dv2": 10.8108108108108,
+    "irsd": 981.0
+  },
+  {
+    "lga": "Carrathool",
+    "dv2": 10.8108108108108,
+    "irsd": 973.0
+  },
+  {
+    "lga": "Copper Coast",
+    "dv2": 10.7692307692308,
+    "irsd": 924.0
+  },
+  {
+    "lga": "Wattle Range",
+    "dv2": 10.7692307692308,
+    "irsd": 942.0
+  },
+  {
+    "lga": "Capel",
+    "dv2": 10.7692307692308,
+    "irsd": 1016.0
+  },
+  {
+    "lga": "Scenic Rim",
+    "dv2": 10.7398568019093,
+    "irsd": 986.0
+  },
+  {
+    "lga": "Goulburn Mulwaree",
+    "dv2": 10.6442577030812,
+    "irsd": 972.0
+  },
+  {
+    "lga": "Prospect",
+    "dv2": 10.6382978723404,
+    "irsd": 1054.0
+  },
+  {
+    "lga": "Port Stephens",
+    "dv2": 10.546875,
+    "irsd": 982.0
+  },
+  {
+    "lga": "Gold Coast",
+    "dv2": 10.5317730706562,
+    "irsd": 1019.0
+  },
+  {
+    "lga": "Snowy Monaro Regional",
+    "dv2": 10.5263157894737,
+    "irsd": 1020.0
+  },
+  {
+    "lga": "Leonora",
+    "dv2": 10.5263157894737,
+    "irsd": 948.0
+  },
+  {
+    "lga": "Northern Midlands",
+    "dv2": 10.5263157894737,
+    "irsd": 966.0
+  },
+  {
+    "lga": "Yass Valley",
+    "dv2": 10.4712041884817,
+    "irsd": 1065.0
+  },
+  {
+    "lga": "Marion",
+    "dv2": 10.4231166150671,
+    "irsd": 1008.0
+  },
+  {
+    "lga": "Gawler",
+    "dv2": 10.4,
+    "irsd": 960.0
+  },
+  {
+    "lga": "Adelaide Plains",
+    "dv2": 10.377358490566,
+    "irsd": 988.0
+  },
+  {
+    "lga": "Brisbane",
+    "dv2": 10.3673526726136,
+    "irsd": 1045.0
+  },
+  {
+    "lga": "Mundaring",
+    "dv2": 10.3448275862069,
+    "irsd": 1042.0
+  },
+  {
+    "lga": "Belmont",
+    "dv2": 10.3370786516854,
+    "irsd": 987.0
+  },
+  {
+    "lga": "Murray River",
+    "dv2": 10.3174603174603,
+    "irsd": 998.0
+  },
+  {
+    "lga": "Pyrenees",
+    "dv2": 10.2941176470588,
+    "irsd": 959.0
+  },
+  {
+    "lga": "Colac Otway",
+    "dv2": 10.2880658436214,
+    "irsd": 973.0
+  },
+  {
+    "lga": "Singleton",
+    "dv2": 10.1694915254237,
+    "irsd": 998.0
+  },
+  {
+    "lga": "Loddon",
+    "dv2": 10.1694915254237,
+    "irsd": 948.0
+  },
+  {
+    "lga": "Bridgetown-Greenbushes",
+    "dv2": 10.1694915254237,
+    "irsd": 1000.0
+  },
+  {
+    "lga": "Maranoa",
+    "dv2": 10.1604278074866,
+    "irsd": 995.0
+  },
+  {
+    "lga": "Canning",
+    "dv2": 10.1207056638812,
+    "irsd": 1023.0
+  },
+  {
+    "lga": "Frankston",
+    "dv2": 10.1172115977791,
+    "irsd": 1003.0
+  },
+  {
+    "lga": "Tea Tree Gully",
+    "dv2": 10.1145038167939,
+    "irsd": 1030.0
+  },
+  {
+    "lga": "Sorell",
+    "dv2": 10.1063829787234,
+    "irsd": 991.0
+  },
+  {
+    "lga": "Wollongong",
+    "dv2": 10.0771869639794,
+    "irsd": 1000.0
+  },
+  {
+    "lga": "Norwood Payneham and St Peters",
+    "dv2": 10.0574712643678,
+    "irsd": 1038.0
+  },
+  {
+    "lga": "Mount Barker",
+    "dv2": 10.0446428571429,
+    "irsd": 1037.0
+  },
+  {
+    "lga": "Burwood",
+    "dv2": 10.0334448160535,
+    "irsd": 977.0
+  },
+  {
+    "lga": "Greater Geelong",
+    "dv2": 10.007524454477,
+    "irsd": 1007.0
+  },
+  {
+    "lga": "Chapman Valley",
+    "dv2": 10.0,
+    "irsd": 1027.0
+  },
+  {
+    "lga": "Unincorporated NT",
+    "dv2": 10.0,
+    "irsd": 1044.0
+  },
+  {
+    "lga": "Whittlesea",
+    "dv2": 9.94623655913978,
+    "irsd": 990.0
+  },
+  {
+    "lga": "Central Coast (NSW)",
+    "dv2": 9.91991733402222,
+    "irsd": 994.0
+  },
+  {
+    "lga": "Bega Valley",
+    "dv2": 9.87654320987654,
+    "irsd": 986.0
+  },
+  {
+    "lga": "Junee",
+    "dv2": 9.85915492957746,
+    "irsd": 934.0
+  },
+  {
+    "lga": "Clarence Valley",
+    "dv2": 9.85626283367557,
+    "irsd": 940.0
+  },
+  {
+    "lga": "Clarence",
+    "dv2": 9.80683506686479,
+    "irsd": 1009.0
+  },
+  {
+    "lga": "Bland",
+    "dv2": 9.80392156862745,
+    "irsd": 993.0
+  },
+  {
+    "lga": "Hepburn",
+    "dv2": 9.75609756097561,
+    "irsd": 1006.0
+  },
+  {
+    "lga": "Casey",
+    "dv2": 9.71804511278195,
+    "irsd": 995.0
+  },
+  {
+    "lga": "Coffs Harbour",
+    "dv2": 9.65770171149144,
+    "irsd": 972.0
+  },
+  {
+    "lga": "Moyne",
+    "dv2": 9.61538461538462,
+    "irsd": 1029.0
+  },
+  {
+    "lga": "Mid-Western Regional",
+    "dv2": 9.6045197740113,
+    "irsd": 979.0
+  },
+  {
+    "lga": "Roxby Downs",
+    "dv2": 9.58904109589041,
+    "irsd": 1048.0
+  },
+  {
+    "lga": "Swan",
+    "dv2": 9.53221535745808,
+    "irsd": 995.0
+  },
+  {
+    "lga": "Mandurah",
+    "dv2": 9.52830188679245,
+    "irsd": 959.0
+  },
+  {
+    "lga": "Moora",
+    "dv2": 9.52380952380952,
+    "irsd": 959.0
+  },
+  {
+    "lga": "Broken Hill",
+    "dv2": 9.5,
+    "irsd": 913.0
+  },
+  {
+    "lga": "Cardinia",
+    "dv2": 9.42118226600985,
+    "irsd": 1021.0
+  },
+  {
+    "lga": "Wanneroo",
+    "dv2": 9.40388906598661,
+    "irsd": 1005.0
+  },
+  {
+    "lga": "Knox",
+    "dv2": 9.38452163315052,
+    "irsd": 1042.0
+  },
+  {
+    "lga": "Wodonga",
+    "dv2": 9.36936936936937,
+    "irsd": 973.0
+  },
+  {
+    "lga": "Parramatta",
+    "dv2": 9.36497754971135,
+    "irsd": 1029.0
+  },
+  {
+    "lga": "Exmouth",
+    "dv2": 9.30232558139535,
+    "irsd": 1038.0
+  },
+  {
+    "lga": "Strathbogie",
+    "dv2": 9.25925925925926,
+    "irsd": 982.0
+  },
+  {
+    "lga": "Donnybrook-Balingup",
+    "dv2": 9.19540229885057,
+    "irsd": 987.0
+  },
+  {
+    "lga": "Charles Sturt",
+    "dv2": 9.15780866721177,
+    "irsd": 1001.0
+  },
+  {
+    "lga": "Karratha",
+    "dv2": 9.13705583756345,
+    "irsd": 1052.0
+  },
+  {
+    "lga": "Warrnambool",
+    "dv2": 9.06593406593407,
+    "irsd": 995.0
+  },
+  {
+    "lga": "Lake Macquarie",
+    "dv2": 9.04121110176619,
+    "irsd": 1004.0
+  },
+  {
+    "lga": "Sydney",
+    "dv2": 9.0146750524109,
+    "irsd": 1031.0
+  },
+  {
+    "lga": "Barossa",
+    "dv2": 8.984375,
+    "irsd": 1014.0
+  },
+  {
+    "lga": "Ballina",
+    "dv2": 8.95522388059701,
+    "irsd": 1015.0
+  },
+  {
+    "lga": "Ryde",
+    "dv2": 8.91016200294551,
+    "irsd": 1055.0
+  },
+  {
+    "lga": "Cowra",
+    "dv2": 8.82352941176471,
+    "irsd": 932.0
+  },
+  {
+    "lga": "Sunshine Coast",
+    "dv2": 8.78341516639389,
+    "irsd": 1022.0
+  },
+  {
+    "lga": "Stirling",
+    "dv2": 8.78243512974052,
+    "irsd": 1027.0
+  },
+  {
+    "lga": "Noosa",
+    "dv2": 8.7719298245614,
+    "irsd": 1030.0
+  },
+  {
+    "lga": "Hilltops",
+    "dv2": 8.72093023255814,
+    "irsd": 954.0
+  },
+  {
+    "lga": "Gannawarra",
+    "dv2": 8.69565217391304,
+    "irsd": 952.0
+  },
+  {
+    "lga": "Banana",
+    "dv2": 8.58585858585858,
+    "irsd": 992.0
+  },
+  {
+    "lga": "Barcaldine",
+    "dv2": 8.57142857142857,
+    "irsd": 1002.0
+  },
+  {
+    "lga": "Dungog",
+    "dv2": 8.49056603773585,
+    "irsd": 1009.0
+  },
+  {
+    "lga": "Temora",
+    "dv2": 8.47457627118644,
+    "irsd": 972.0
+  },
+  {
+    "lga": "Hobsons Bay",
+    "dv2": 8.44091360476663,
+    "irsd": 1021.0
+  },
+  {
+    "lga": "Augusta Margaret River",
+    "dv2": 8.3969465648855,
+    "irsd": 1031.0
+  },
+  {
+    "lga": "Bayside (NSW)",
+    "dv2": 8.38168923275306,
+    "irsd": 1004.0
+  },
+  {
+    "lga": "Hawkesbury",
+    "dv2": 8.34419817470665,
+    "irsd": 1026.0
+  },
+  {
+    "lga": "Weipa",
+    "dv2": 8.33333333333333,
+    "irsd": 1058.0
+  },
+  {
+    "lga": "Northern Areas",
+    "dv2": 8.33333333333333,
+    "irsd": 979.0
+  },
+  {
+    "lga": "Boddington",
+    "dv2": 8.33333333333333,
+    "irsd": 976.0
+  },
+  {
+    "lga": "Northampton",
+    "dv2": 8.33333333333333,
+    "irsd": 954.0
+  },
+  {
+    "lga": "Federation",
+    "dv2": 8.10810810810811,
+    "irsd": 969.0
+  },
+  {
+    "lga": "Newcastle",
+    "dv2": 8.10810810810811,
+    "irsd": 1012.0
+  },
+  {
+    "lga": "Wingecarribee",
+    "dv2": 8.07860262008734,
+    "irsd": 1045.0
+  },
+  {
+    "lga": "Yarra Ranges",
+    "dv2": 8.06553245116572,
+    "irsd": 1041.0
+  },
+  {
+    "lga": "Murray",
+    "dv2": 8.05687203791469,
+    "irsd": 962.0
+  },
+  {
+    "lga": "Bayswater",
+    "dv2": 8.05555555555556,
+    "irsd": 1018.0
+  },
+  {
+    "lga": "Camden",
+    "dv2": 8.02568218298555,
+    "irsd": 1045.0
+  },
+  {
+    "lga": "Hinchinbrook",
+    "dv2": 7.84313725490196,
+    "irsd": 954.0
+  },
+  {
+    "lga": "Cockburn",
+    "dv2": 7.8167115902965,
+    "irsd": 1033.0
+  },
+  {
+    "lga": "Darebin",
+    "dv2": 7.79436152570481,
+    "irsd": 1018.0
+  },
+  {
+    "lga": "The Hills Shire",
+    "dv2": 7.77912132204756,
+    "irsd": 1098.0
+  },
+  {
+    "lga": "Randwick",
+    "dv2": 7.74703557312253,
+    "irsd": 1059.0
+  },
+  {
+    "lga": "Sutherland Shire",
+    "dv2": 7.698199923401,
+    "irsd": 1079.0
+  },
+  {
+    "lga": "Narrabri",
+    "dv2": 7.69230769230769,
+    "irsd": 964.0
+  },
+  {
+    "lga": "Weddin",
+    "dv2": 7.69230769230769,
+    "irsd": 961.0
+  },
+  {
+    "lga": "Victoria Park",
+    "dv2": 7.65432098765432,
+    "irsd": 1030.0
+  },
+  {
+    "lga": "Unley",
+    "dv2": 7.61154855643045,
+    "irsd": 1067.0
+  },
+  {
+    "lga": "Whitehorse",
+    "dv2": 7.52895752895753,
+    "irsd": 1043.0
+  },
+  {
+    "lga": "Maribyrnong",
+    "dv2": 7.52427184466019,
+    "irsd": 1010.0
+  },
+  {
+    "lga": "Canada Bay",
+    "dv2": 7.51515151515151,
+    "irsd": 1067.0
+  },
+  {
+    "lga": "Hobart",
+    "dv2": 7.45614035087719,
+    "irsd": 1046.0
+  },
+  {
+    "lga": "Perth",
+    "dv2": 7.42857142857143,
+    "irsd": 1040.0
+  },
+  {
+    "lga": "Claremont",
+    "dv2": 7.36842105263158,
+    "irsd": 1081.0
+  },
+  {
+    "lga": "Isaac",
+    "dv2": 7.34463276836158,
+    "irsd": 1012.0
+  },
+  {
+    "lga": "Lockhart",
+    "dv2": 7.31707317073171,
+    "irsd": 976.0
+  },
+  {
+    "lga": "Manjimup",
+    "dv2": 7.31707317073171,
+    "irsd": 959.0
+  },
+  {
+    "lga": "Kingston (Vic.)",
+    "dv2": 7.28672985781991,
+    "irsd": 1044.0
+  },
+  {
+    "lga": "Upper Hunter Shire",
+    "dv2": 7.2289156626506,
+    "irsd": 975.0
+  },
+  {
+    "lga": "Holdfast Bay",
+    "dv2": 7.21003134796238,
+    "irsd": 1047.0
+  },
+  {
+    "lga": "Georges River",
+    "dv2": 7.19225449515906,
+    "irsd": 1011.0
+  },
+  {
+    "lga": "Burnside",
+    "dv2": 7.18685831622177,
+    "irsd": 1083.0
+  },
+  {
+    "lga": "Busselton",
+    "dv2": 7.08154506437768,
+    "irsd": 1019.0
+  },
+  {
+    "lga": "Waverley",
+    "dv2": 7.02341137123746,
+    "irsd": 1092.0
+  },
+  {
+    "lga": "Inner West",
+    "dv2": 6.84178375076359,
+    "irsd": 1057.0
+  },
+  {
+    "lga": "Maroondah",
+    "dv2": 6.79214402618658,
+    "irsd": 1041.0
+  },
+  {
+    "lga": "Kingborough",
+    "dv2": 6.79156908665105,
+    "irsd": 1038.0
+  },
+  {
+    "lga": "Manningham",
+    "dv2": 6.77530017152659,
+    "irsd": 1056.0
+  },
+  {
+    "lga": "Fremantle",
+    "dv2": 6.7741935483871,
+    "irsd": 1031.0
+  },
+  {
+    "lga": "Collie",
+    "dv2": 6.73076923076923,
+    "irsd": 908.0
+  },
+  {
+    "lga": "Goomalling",
+    "dv2": 6.66666666666667,
+    "irsd": 998.0
+  },
+  {
+    "lga": "Macedon Ranges",
+    "dv2": 6.65610142630745,
+    "irsd": 1063.0
+  },
+  {
+    "lga": "Ku-ring-gai",
+    "dv2": 6.6480055983205,
+    "irsd": 1108.0
+  },
+  {
+    "lga": "Adelaide Hills",
+    "dv2": 6.58823529411765,
+    "irsd": 1081.0
+  },
+  {
+    "lga": "Monash",
+    "dv2": 6.54205607476635,
+    "irsd": 1042.0
+  },
+  {
+    "lga": "Banyule",
+    "dv2": 6.50887573964497,
+    "irsd": 1058.0
+  },
+  {
+    "lga": "Glen Eira",
+    "dv2": 6.4868804664723,
+    "irsd": 1075.0
+  },
+  {
+    "lga": "North Sydney",
+    "dv2": 6.47985989492119,
+    "irsd": 1096.0
+  },
+  {
+    "lga": "Northern Beaches",
+    "dv2": 6.47100424328147,
+    "irsd": 1089.0
+  },
+  {
+    "lga": "York",
+    "dv2": 6.45161290322581,
+    "irsd": 968.0
+  },
+  {
+    "lga": "Latrobe (Tas.)",
+    "dv2": 6.42201834862385,
+    "irsd": 974.0
+  },
+  {
+    "lga": "Liverpool Plains",
+    "dv2": 6.38297872340426,
+    "irsd": 926.0
+  },
+  {
+    "lga": "Vincent",
+    "dv2": 6.34005763688761,
+    "irsd": 1068.0
+  },
+  {
+    "lga": "Gunnedah",
+    "dv2": 6.282722513089,
+    "irsd": 967.0
+  },
+  {
+    "lga": "Blue Mountains",
+    "dv2": 6.28019323671498,
+    "irsd": 1048.0
+  },
+  {
+    "lga": "Winton",
+    "dv2": 6.25,
+    "irsd": 993.0
+  },
+  {
+    "lga": "Peterborough",
+    "dv2": 6.25,
+    "irsd": 773.0
+  },
+  {
+    "lga": "Jerramungup",
+    "dv2": 6.25,
+    "irsd": 1025.0
+  },
+  {
+    "lga": "Hornsby",
+    "dv2": 6.19670267197271,
+    "irsd": 1082.0
+  },
+  {
+    "lga": "Mitcham",
+    "dv2": 6.16929698708752,
+    "irsd": 1075.0
+  },
+  {
+    "lga": "Gnowangerup",
+    "dv2": 5.88235294117647,
+    "irsd": 996.0
+  },
+  {
+    "lga": "Denmark",
+    "dv2": 5.79710144927536,
+    "irsd": 1003.0
+  },
+  {
+    "lga": "Mornington Peninsula",
+    "dv2": 5.77547047371836,
+    "irsd": 1038.0
+  },
+  {
+    "lga": "Joondalup",
+    "dv2": 5.5045871559633,
+    "irsd": 1072.0
+  },
+  {
+    "lga": "Port Phillip",
+    "dv2": 5.50335570469799,
+    "irsd": 1061.0
+  },
+  {
+    "lga": "Melville",
+    "dv2": 5.4759898904802,
+    "irsd": 1070.0
+  },
+  {
+    "lga": "Stonnington",
+    "dv2": 5.43657331136738,
+    "irsd": 1084.0
+  },
+  {
+    "lga": "Mosman Park",
+    "dv2": 5.43478260869565,
+    "irsd": 1061.0
+  },
+  {
+    "lga": "Cabonne",
+    "dv2": 5.32544378698225,
+    "irsd": 1023.0
+  },
+  {
+    "lga": "Moonee Valley",
+    "dv2": 5.32010820559062,
+    "irsd": 1041.0
+  },
+  {
+    "lga": "Meander Valley",
+    "dv2": 5.31400966183575,
+    "irsd": 976.0
+  },
+  {
+    "lga": "Coolgardie",
+    "dv2": 5.26315789473684,
+    "irsd": 897.0
+  },
+  {
+    "lga": "Bassendean",
+    "dv2": 5.11363636363636,
+    "irsd": 1015.0
+  },
+  {
+    "lga": "Mosman",
+    "dv2": 5.10204081632653,
+    "irsd": 1110.0
+  },
+  {
+    "lga": "Nillumbik",
+    "dv2": 5.05226480836237,
+    "irsd": 1093.0
+  },
+  {
+    "lga": "Murrindindi",
+    "dv2": 5.0,
+    "irsd": 1005.0
+  },
+  {
+    "lga": "Nedlands",
+    "dv2": 4.9792531120332,
+    "irsd": 1115.0
+  },
+  {
+    "lga": "Wollondilly",
+    "dv2": 4.94752623688156,
+    "irsd": 1041.0
+  },
+  {
+    "lga": "Subiaco",
+    "dv2": 4.94505494505495,
+    "irsd": 1079.0
+  },
+  {
+    "lga": "Hay",
+    "dv2": 4.8780487804878,
+    "irsd": 956.0
+  },
+  {
+    "lga": "Cambridge",
+    "dv2": 4.80225988700565,
+    "irsd": 1113.0
+  },
+  {
+    "lga": "Boroondara",
+    "dv2": 4.79134466769706,
+    "irsd": 1090.0
+  },
+  {
+    "lga": "Lane Cove",
+    "dv2": 4.66101694915254,
+    "irsd": 1105.0
+  },
+  {
+    "lga": "Byron",
+    "dv2": 4.58715596330275,
+    "irsd": 1021.0
+  },
+  {
+    "lga": "Woollahra",
+    "dv2": 4.55486542443064,
+    "irsd": 1110.0
+  },
+  {
+    "lga": "South Perth",
+    "dv2": 4.54545454545455,
+    "irsd": 1066.0
+  },
+  {
+    "lga": "Uralla",
+    "dv2": 4.44444444444444,
+    "irsd": 990.0
+  },
+  {
+    "lga": "Indigo",
+    "dv2": 4.3956043956044,
+    "irsd": 1029.0
+  },
+  {
+    "lga": "Alpine",
+    "dv2": 4.3859649122807,
+    "irsd": 1028.0
+  },
+  {
+    "lga": "Upper Lachlan Shire",
+    "dv2": 4.34782608695652,
+    "irsd": 1022.0
+  },
+  {
+    "lga": "Kingston (SA)",
+    "dv2": 4.34782608695652,
+    "irsd": 977.0
+  },
+  {
+    "lga": "East Fremantle",
+    "dv2": 4.3010752688172,
+    "irsd": 1082.0
+  },
+  {
+    "lga": "Esperance",
+    "dv2": 4.24242424242424,
+    "irsd": 995.0
+  },
+  {
+    "lga": "Waratah-Wynyard",
+    "dv2": 4.16666666666667,
+    "irsd": 929.0
+  },
+  {
+    "lga": "Willoughby",
+    "dv2": 4.0133779264214,
+    "irsd": 1075.0
+  },
+  {
+    "lga": "Warren",
+    "dv2": 4.0,
+    "irsd": 962.0
+  },
+  {
+    "lga": "Surf Coast",
+    "dv2": 3.85487528344671,
+    "irsd": 1086.0
+  },
+  {
+    "lga": "Irwin",
+    "dv2": 3.33333333333333,
+    "irsd": 966.0
+  },
+  {
+    "lga": "Bayside (Vic.)",
+    "dv2": 3.21199143468951,
+    "irsd": 1090.0
+  },
+  {
+    "lga": "Bogan",
+    "dv2": 3.125,
+    "irsd": 966.0
+  },
+  {
+    "lga": "Walkerville",
+    "dv2": 2.77777777777778,
+    "irsd": 1075.0
+  },
+  {
+    "lga": "Hunters Hill",
+    "dv2": 2.75862068965517,
+    "irsd": 1101.0
+  },
+  {
+    "lga": "Gingin",
+    "dv2": 2.04081632653061,
+    "irsd": 975.0
+  },
+  {
+    "lga": "Coolamon",
+    "dv2": 1.78571428571429,
+    "irsd": 983.0
+  },
+  {
+    "lga": "Cottesloe",
+    "dv2": 1.58730158730159,
+    "irsd": 1112.0
+  },
+  {
+    "lga": "Kiama",
+    "dv2": 1.44404332129964,
+    "irsd": 1070.0
+  },
+  {
+    "lga": "Mansfield",
+    "dv2": 1.33333333333333,
+    "irsd": 1028.0
+  },
+  {
+    "lga": "Tumby Bay",
+    "dv2": 0.0,
+    "irsd": 993.0
+  },
+  {
+    "lga": "Dalwallinu",
+    "dv2": 0.0,
+    "irsd": 1056.0
+  },
+  {
+    "lga": "Lake Grace",
+    "dv2": 0.0,
+    "irsd": 1051.0
+  },
+  {
+    "lga": "Williams",
+    "dv2": 0.0,
+    "irsd": 1030.0
+  }
+]

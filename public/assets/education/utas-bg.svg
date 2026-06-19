@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080706"/><stop offset="1" stop-color="#171208"/></linearGradient><radialGradient id="r" cx="42%" cy="44%" r="64%"><stop stop-color="#d7b56d" stop-opacity=".28"/><stop offset="1" stop-opacity="0"/></radialGradient></defs>
+  <rect width="900" height="520" fill="url(#g)"/><rect width="900" height="520" fill="url(#r)"/>
+  <g stroke="#d7b56d" stroke-opacity=".14"><path d="M0 92h900M0 184h900M0 276h900M0 368h900M0 460h900"/><path d="M92 0v520M184 0v520M276 0v520M368 0v520M460 0v520M552 0v520M644 0v520M736 0v520M828 0v520"/></g>
+  <g transform="translate(112 116) scale(.78)" fill="none" stroke="#f2d58a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity=".86">
+    <path d="M70 156c28-62 82-92 152-84 54 6 96 34 124 82"/>
+    <path d="M116 188c48 28 112 32 172 6"/>
+    <path d="M236 92c14-38 42-58 84-60"/>
+    <path d="M328 50l-34 42 54 18"/>
+    <path d="M334 134c42 0 76 12 106 38"/>
+    <path d="M90 222h224"/>
+  </g>
+  <text x="520" y="190" fill="#f2d58a" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">UTAS</text>
+  <text x="520" y="242" fill="#b7a06d" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">UNIVERSITY OF TASMANIA</text>
+</svg>
