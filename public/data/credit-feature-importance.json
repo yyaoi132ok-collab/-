@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "postCode_te",
+    "importance": 1302
+  },
+  {
+    "feature": "revolbal_to_income",
+    "importance": 1227
+  },
+  {
+    "feature": "annualIncome",
+    "importance": 1222
+  },
+  {
+    "feature": "credit_history_log1p",
+    "importance": 1130
+  },
+  {
+    "feature": "revolBal",
+    "importance": 1125
+  },
+  {
+    "feature": "loan_to_income",
+    "importance": 1116
+  },
+  {
+    "feature": "open_total_acc_ratio",
+    "importance": 1090
+  },
+  {
+    "feature": "regionCode_te",
+    "importance": 1080
+  },
+  {
+    "feature": "loanAmnt",
+    "importance": 977
+  },
+  {
+    "feature": "grade_dti_interaction",
+    "importance": 920
+  },
+  {
+    "feature": "annual_installment_to_income",
+    "importance": 887
+  },
+  {
+    "feature": "ficoRangeLow",
+    "importance": 871
+  },
+  {
+    "feature": "dti_sq",
+    "importance": 861
+  },
+  {
+    "feature": "n2",
+    "importance": 840
+  },
+  {
+    "feature": "n14",
+    "importance": 828
+  }
+]

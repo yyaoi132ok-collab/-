@@ -1,0 +1,122 @@
+[
+  {
+    "split": "holdout",
+    "risk_band": "Top 0-10%",
+    "band_order": "1",
+    "rows": "8000",
+    "score_min": "0.38758594507773875",
+    "score_max": "0.8106840272418572",
+    "bad_count": "3554",
+    "bad_rate": 0.4442,
+    "capture_rate": 0.2229,
+    "lift": 2.2292
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 10-20%",
+    "band_order": "2",
+    "rows": "8000",
+    "score_min": "0.2947558298653475",
+    "score_max": "0.38757363212550144",
+    "bad_count": "2739",
+    "bad_rate": 0.3424,
+    "capture_rate": 0.1718,
+    "lift": 1.718
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 20-30%",
+    "band_order": "3",
+    "rows": "8000",
+    "score_min": "0.23842238737005123",
+    "score_max": "0.2947557066960209",
+    "bad_count": "2241",
+    "bad_rate": 0.2801,
+    "capture_rate": 0.1406,
+    "lift": 1.4056
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 30-40%",
+    "band_order": "4",
+    "rows": "8000",
+    "score_min": "0.1962229139295733",
+    "score_max": "0.23842004719840817",
+    "bad_count": "1887",
+    "bad_rate": 0.2359,
+    "capture_rate": 0.1184,
+    "lift": 1.1836
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 40-50%",
+    "band_order": "5",
+    "rows": "8000",
+    "score_min": "0.16107674591481538",
+    "score_max": "0.19620682291764763",
+    "bad_count": "1597",
+    "bad_rate": 0.1996,
+    "capture_rate": 0.1002,
+    "lift": 1.0017
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 50-60%",
+    "band_order": "6",
+    "rows": "8000",
+    "score_min": "0.1298614206115218",
+    "score_max": "0.16106298787609105",
+    "bad_count": "1276",
+    "bad_rate": 0.1595,
+    "capture_rate": 0.08,
+    "lift": 0.8004
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 60-70%",
+    "band_order": "7",
+    "rows": "8000",
+    "score_min": "0.10172245432263842",
+    "score_max": "0.12986009107407853",
+    "bad_count": "1052",
+    "bad_rate": 0.1315,
+    "capture_rate": 0.066,
+    "lift": 0.6599
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 70-80%",
+    "band_order": "8",
+    "rows": "8000",
+    "score_min": "0.07547720111722048",
+    "score_max": "0.10171907464563437",
+    "bad_count": "781",
+    "bad_rate": 0.0976,
+    "capture_rate": 0.049,
+    "lift": 0.4899
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 80-90%",
+    "band_order": "9",
+    "rows": "8000",
+    "score_min": "0.04702328052911526",
+    "score_max": "0.07547335938711994",
+    "bad_count": "564",
+    "bad_rate": 0.0705,
+    "capture_rate": 0.0354,
+    "lift": 0.3538
+  },
+  {
+    "split": "holdout",
+    "risk_band": "Top 90-100%",
+    "band_order": "10",
+    "rows": "8000",
+    "score_min": "0.010161026000554713",
+    "score_max": "0.04701996944179139",
+    "bad_count": "252",
+    "bad_rate": 0.0315,
+    "capture_rate": 0.0158,
+    "lift": 0.1581
+  }
+]

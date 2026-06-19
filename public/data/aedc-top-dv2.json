@@ -1,0 +1,102 @@
+[
+  {
+    "lga": "Tiwi Islands",
+    "dv2": 81.25,
+    "irsd": 564.0
+  },
+  {
+    "lga": "Anangu Pitjantjatjara Yunkunyt",
+    "dv2": 77.7777777777778,
+    "irsd": 496.0
+  },
+  {
+    "lga": "MacDonnell",
+    "dv2": 74.5454545454545,
+    "irsd": 566.0
+  },
+  {
+    "lga": "Barkly",
+    "dv2": 60.6060606060606,
+    "irsd": 670.0
+  },
+  {
+    "lga": "West Daly",
+    "dv2": 52.5423728813559,
+    "irsd": 439.0
+  },
+  {
+    "lga": "Halls Creek",
+    "dv2": 51.4285714285714,
+    "irsd": 540.0
+  },
+  {
+    "lga": "Cherbourg",
+    "dv2": 43.75,
+    "irsd": 498.0
+  },
+  {
+    "lga": "Roper Gulf",
+    "dv2": 41.9354838709677,
+    "irsd": 534.0
+  },
+  {
+    "lga": "Cook",
+    "dv2": 41.3333333333333,
+    "irsd": 913.0
+  },
+  {
+    "lga": "Bourke",
+    "dv2": 40.0,
+    "irsd": 947.0
+  },
+  {
+    "lga": "Meekatharra",
+    "dv2": 38.8888888888889,
+    "irsd": 848.0
+  },
+  {
+    "lga": "East Arnhem",
+    "dv2": 38.2352941176471,
+    "irsd": 486.0
+  },
+  {
+    "lga": "Brewarrina",
+    "dv2": 38.0952380952381,
+    "irsd": 818.0
+  },
+  {
+    "lga": "Victoria Daly",
+    "dv2": 37.5,
+    "irsd": 590.0
+  },
+  {
+    "lga": "Northern Peninsula Area",
+    "dv2": 34.6938775510204,
+    "irsd": 702.0
+  },
+  {
+    "lga": "Toodyay",
+    "dv2": 34.375,
+    "irsd": 986.0
+  },
+  {
+    "lga": "West Coast",
+    "dv2": 34.0425531914894,
+    "irsd": 861.0
+  },
+  {
+    "lga": "Ravensthorpe",
+    "dv2": 33.3333333333333,
+    "irsd": 1002.0
+  },
+  {
+    "lga": "Wickepin",
+    "dv2": 33.3333333333333,
+    "irsd": 994.0
+  },
+  {
+    "lga": "Cobar",
+    "dv2": 31.9148936170213,
+    "irsd": 965.0
+  }
+]

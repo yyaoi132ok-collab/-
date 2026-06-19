@@ -1,0 +1,42 @@
+[
+  {
+    "segment": "Tax pages",
+    "mean_revenue": 128,
+    "type": "Page theme"
+  },
+  {
+    "segment": "Emergency pages",
+    "mean_revenue": 64,
+    "type": "Page theme"
+  },
+  {
+    "segment": "Email",
+    "mean_revenue": 118,
+    "type": "Traffic"
+  },
+  {
+    "segment": "QR traffic",
+    "mean_revenue": 110,
+    "type": "Traffic"
+  },
+  {
+    "segment": "Paid search",
+    "mean_revenue": 76,
+    "type": "Traffic"
+  },
+  {
+    "segment": "Mobile",
+    "mean_revenue": 67.7,
+    "type": "Device"
+  },
+  {
+    "segment": "Desktop",
+    "mean_revenue": 116.7,
+    "type": "Device"
+  },
+  {
+    "segment": "Tablet",
+    "mean_revenue": 116.7,
+    "type": "Device"
+  }
+]
