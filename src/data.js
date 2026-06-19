@@ -47,7 +47,23 @@ export const portfolioData = {
         "中期扩展 Brooklyn youth-centered engagement，长期布局 Queens multilingual expansion。"
       ],
       tags: ["Market Intelligence", "KPI Design", "SARIMA", "Strategy Deck"],
-      charts: []
+      charts: [
+        {
+          src: "public/assets/projects/enpak/market-overview.png",
+          alt: "Enpak NYC 市场结构和 borough 对比图",
+          caption: "纽约市场结构呈现明显差异，Manhattan 更适合即时商业化，Brooklyn 更适合增长扩展。"
+        },
+        {
+          src: "public/assets/projects/enpak/event-heatmap.png",
+          alt: "NYC 历史活动热力图",
+          caption: "活动密度集中在 Manhattan 和 central Brooklyn，用于辅助选择 pilot launch 区域。"
+        },
+        {
+          src: "public/assets/projects/enpak/forecast.png",
+          alt: "SARIMA 12 个月活动趋势预测",
+          caption: "SARIMA 预测用于辅助判断未来 12 个月活动波动和上线节奏。"
+        }
+      ]
     },
     {
       id: "credit",
@@ -125,7 +141,23 @@ export const portfolioData = {
         "Mobile/iOS 用户使用 AUD 70/95/220 的低门槛 ladder，降低转化阻力。"
       ],
       tags: ["EDA", "Regression", "Stacking", "Growth Analytics"],
-      charts: []
+      charts: [
+        {
+          src: "public/assets/projects/unicef/donation-distribution.png",
+          alt: "UNICEF 捐赠金额分布",
+          caption: "捐赠金额高度右偏，说明需要同时关注普通捐赠者和高价值捐赠者。"
+        },
+        {
+          src: "public/assets/projects/unicef/monthly-revenue.png",
+          alt: "UNICEF 月度捐赠收入变化",
+          caption: "月度收入在税季和年末出现高峰，体现 campaign timing 对捐赠行为的影响。"
+        },
+        {
+          src: "public/assets/projects/unicef/traffic-page-attributes.png",
+          alt: "UNICEF 页面与流量属性表现",
+          caption: "页面意图和流量来源共同影响捐赠金额与转化质量。"
+        }
+      ]
     },
     {
       id: "aedc",
@@ -156,7 +188,23 @@ export const portfolioData = {
         "将 Google Reviews 作为早期预警工具，而不是替代 NQS 或 AEDC 的正式质量指标。"
       ],
       tags: ["Spatial Analytics", "Policy Insight", "Geo Join", "Data Visualization"],
-      charts: []
+      charts: [
+        {
+          src: "public/assets/projects/aedc/top-dv2-lgas.png",
+          alt: "AEDC 高 DV2 地区排名",
+          caption: "高 DV2 地区显著高于全国 LGA 中位数，且常被小人口规模掩盖。"
+        },
+        {
+          src: "public/assets/projects/aedc/seifa-dv2-relationship.png",
+          alt: "SEIFA IRSD 与 DV2 关系",
+          caption: "SEIFA IRSD 与 DV2 强负相关，显示儿童发展脆弱性存在社会经济梯度。"
+        },
+        {
+          src: "public/assets/projects/aedc/transit-accessibility.png",
+          alt: "交通可达性与 DV2 关系",
+          caption: "高 DV2 地区往往伴随更弱公共交通可达性，形成复合劣势。"
+        }
+      ]
     }
   ],
   skills: [
