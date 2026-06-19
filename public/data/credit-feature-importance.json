@@ -1,62 +1,77 @@
 [
   {
     "feature": "postCode_te",
-    "importance": 1302
+    "importance": 1302,
+    "label_zh": "邮编风险编码"
   },
   {
     "feature": "revolbal_to_income",
-    "importance": 1227
+    "importance": 1227,
+    "label_zh": "循环授信余额/年收入"
   },
   {
     "feature": "annualIncome",
-    "importance": 1222
+    "importance": 1222,
+    "label_zh": "年收入"
   },
   {
     "feature": "credit_history_log1p",
-    "importance": 1130
+    "importance": 1130,
+    "label_zh": "信用历史长度"
   },
   {
     "feature": "revolBal",
-    "importance": 1125
+    "importance": 1125,
+    "label_zh": "循环授信余额"
   },
   {
     "feature": "loan_to_income",
-    "importance": 1116
+    "importance": 1116,
+    "label_zh": "贷款金额/年收入"
   },
   {
     "feature": "open_total_acc_ratio",
-    "importance": 1090
+    "importance": 1090,
+    "label_zh": "开放账户占比"
   },
   {
     "feature": "regionCode_te",
-    "importance": 1080
+    "importance": 1080,
+    "label_zh": "地区风险编码"
   },
   {
     "feature": "loanAmnt",
-    "importance": 977
+    "importance": 977,
+    "label_zh": "贷款金额"
   },
   {
     "feature": "grade_dti_interaction",
-    "importance": 920
+    "importance": 920,
+    "label_zh": "信用等级×债务收入比"
   },
   {
     "feature": "annual_installment_to_income",
-    "importance": 887
+    "importance": 887,
+    "label_zh": "年还款额/年收入"
   },
   {
     "feature": "ficoRangeLow",
-    "importance": 871
+    "importance": 871,
+    "label_zh": "FICO评分下界"
   },
   {
     "feature": "dti_sq",
-    "importance": 861
+    "importance": 861,
+    "label_zh": "债务收入比平方项"
   },
   {
     "feature": "n2",
-    "importance": 840
+    "importance": 840,
+    "label_zh": "匿名信用变量 n2"
   },
   {
     "feature": "n14",
-    "importance": 828
+    "importance": 828,
+    "label_zh": "匿名信用变量 n14"
   }
 ]

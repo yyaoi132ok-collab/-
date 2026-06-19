@@ -10,7 +10,10 @@ const requiredDataFiles = [
   "public/data/unicef-donation-distribution.json",
   "public/data/unicef-channel-performance.json",
   "public/data/aedc-seifa-dv2.json",
-  "public/data/aedc-top-dv2.json"
+  "public/data/aedc-top-dv2.json",
+  "public/data/aedc-lga-map.geojson",
+  "public/data/nyc-boroughs.geojson",
+  "public/data/credit-model-comparison.json"
 ];
 const requiredText = [
   "姚羿 Yi Yao",

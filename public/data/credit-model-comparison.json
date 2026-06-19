@@ -1,0 +1,38 @@
+[
+  {
+    "model": "OptimizedWeightedVoting",
+    "auc_holdout": 0.7184,
+    "ks_holdout": 0.3199,
+    "lift_top10_holdout": 2.2292
+  },
+  {
+    "model": "TunedLightGBM",
+    "auc_holdout": 0.7187,
+    "ks_holdout": 0.3209,
+    "lift_top10_holdout": 2.2292
+  },
+  {
+    "model": "CatBoost_spw4",
+    "auc_holdout": 0.7159,
+    "ks_holdout": 0.3154,
+    "lift_top10_holdout": 2.206
+  },
+  {
+    "model": "CatBoost",
+    "auc_holdout": 0.7154,
+    "ks_holdout": 0.3136,
+    "lift_top10_holdout": 2.2079
+  },
+  {
+    "model": "XGBoost",
+    "auc_holdout": 0.7144,
+    "ks_holdout": 0.3117,
+    "lift_top10_holdout": 2.1966
+  },
+  {
+    "model": "LogisticRegression_alpha5",
+    "auc_holdout": 0.7077,
+    "ks_holdout": 0.3009,
+    "lift_top10_holdout": 2.1847
+  }
+]

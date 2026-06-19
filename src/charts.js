@@ -18,6 +18,17 @@ const baseLayout = {
   }
 };
 
+const mapLayout = {
+  ...baseLayout,
+  margin: { t: 16, r: 0, b: 0, l: 0 },
+  geo: {
+    fitbounds: "locations",
+    visible: false,
+    projection: { type: "mercator" },
+    bgcolor: "rgba(0,0,0,0)"
+  }
+};
+
 async function loadJson(path) {
   const response = await fetch(path);
   if (!response.ok) {
@@ -37,25 +48,33 @@ function currencyTick(value) {
 
 async function renderEnpakCharts() {
   const market = await loadJson("public/data/enpak-market.json");
+  const boroughs = await loadJson("public/data/nyc-boroughs.geojson");
   const forecast = await loadJson("public/data/enpak-forecast.json");
 
   plot(
     document.querySelector('[data-chart="enpak-market"]'),
     [
       {
-        type: "bar",
-        x: market.map((d) => d.borough),
-        y: market.map((d) => d.business_density),
-        marker: { color: "#167a7f" },
+        type: "choropleth",
+        geojson: boroughs,
+        locations: market.map((d) => d.borough),
+        z: market.map((d) => d.business_density),
+        featureidkey: "properties.borough",
+        colorscale: [
+          [0, "#dcebef"],
+          [0.5, "#61a7a6"],
+          [1, "#0d565a"]
+        ],
+        marker: { line: { color: "#ffffff", width: 1.2 } },
+        colorbar: { title: "Business<br>density" },
         customdata: market.map((d) => [d.population_density, d.median_income, d.education_share]),
         hovertemplate:
-          "<b>%{x}</b><br>Business density: %{y:.2f}/km²<br>Population density: %{customdata[0]:,.0f}/km²<br>Median income: $%{customdata[1]:,.0f}<br>Bachelor+: %{customdata[2]:.1f}%<extra></extra>"
+          "<b>%{location}</b><br>Business density: %{z:.2f}/km²<br>Population density: %{customdata[0]:,.0f}/km²<br>Median income: $%{customdata[1]:,.0f}<br>Bachelor+: %{customdata[2]:.1f}%<extra></extra>"
       }
     ],
     {
-      title: { text: "NYC borough 商业密度对比", x: 0, xanchor: "left" },
-      yaxis: { title: "Weighted business density / km²", gridcolor: "#e7edf3" },
-      xaxis: { tickangle: -18 }
+      ...mapLayout,
+      title: { text: "", x: 0, xanchor: "left" }
     }
   );
 
@@ -94,9 +113,11 @@ async function renderEnpakCharts() {
       }
     ],
     {
-      title: { text: "SARIMA 12 个月活动趋势预测", x: 0, xanchor: "left" },
-      yaxis: { title: "Events", gridcolor: "#e7edf3" },
-      xaxis: { tickangle: -30 }
+      title: { text: "", x: 0, xanchor: "left" },
+      showlegend: false,
+      yaxis: { title: "Events", gridcolor: "#e7edf3", rangemode: "tozero" },
+      xaxis: { tickangle: -20, nticks: 6 },
+      margin: { t: 8, r: 16, b: 56, l: 58 }
     }
   );
 }
@@ -112,16 +133,31 @@ async function renderCreditCharts() {
         type: "bar",
         x: bands.map((d) => d.risk_band),
         y: bands.map((d) => d.bad_rate * 100),
+        name: "坏账率",
         marker: { color: "#167a7f" },
         customdata: bands.map((d) => [d.capture_rate * 100, d.lift]),
         hovertemplate:
-          "<b>%{x}</b><br>Bad rate: %{y:.2f}%<br>Capture rate: %{customdata[0]:.2f}%<br>Lift: %{customdata[1]:.2f}x<extra></extra>"
+          "<b>%{x}</b><br>坏账率: %{y:.2f}%<br>坏账捕获率: %{customdata[0]:.2f}%<br>Lift: %{customdata[1]:.2f}x<extra></extra>"
+      },
+      {
+        type: "scatter",
+        mode: "lines+markers",
+        x: bands.map((d) => d.risk_band),
+        y: bands.map((d) => d.lift),
+        name: "Lift",
+        yaxis: "y2",
+        line: { color: "#235b9f", width: 3 },
+        marker: { size: 7 },
+        hovertemplate: "<b>%{x}</b><br>Lift: %{y:.2f}x<extra></extra>"
       }
     ],
     {
-      title: { text: "Holdout 风险分层坏账率", x: 0, xanchor: "left" },
-      yaxis: { title: "Bad rate (%)", gridcolor: "#e7edf3" },
-      xaxis: { tickangle: -35 }
+      title: { text: "", x: 0, xanchor: "left" },
+      legend: { orientation: "h", y: 1.12, x: 0 },
+      yaxis: { title: "坏账率 (%)", gridcolor: "#e7edf3" },
+      yaxis2: { title: "Lift", overlaying: "y", side: "right", rangemode: "tozero" },
+      xaxis: { tickangle: -28 },
+      margin: { t: 36, r: 58, b: 70, l: 58 }
     }
   );
 
@@ -133,16 +169,17 @@ async function renderCreditCharts() {
         type: "bar",
         orientation: "h",
         x: top.map((d) => d.importance),
-        y: top.map((d) => d.feature),
+        y: top.map((d) => d.label_zh || d.feature),
         marker: { color: "#235b9f" },
-        hovertemplate: "<b>%{y}</b><br>Importance: %{x}<extra></extra>"
+        customdata: top.map((d) => d.feature),
+        hovertemplate: "<b>%{y}</b><br>原始变量: %{customdata}<br>Importance: %{x}<extra></extra>"
       }
     ],
     {
-      title: { text: "Top 15 特征重要性", x: 0, xanchor: "left" },
+      title: { text: "", x: 0, xanchor: "left" },
       xaxis: { title: "Importance", gridcolor: "#e7edf3" },
       yaxis: { automargin: true },
-      margin: { t: 36, r: 20, b: 46, l: 150 }
+      margin: { t: 8, r: 20, b: 46, l: 180 }
     }
   );
 }
@@ -190,8 +227,34 @@ async function renderUnicefCharts() {
 }
 
 async function renderAedcCharts() {
+  const map = await loadJson("public/data/aedc-lga-map.geojson");
   const scatter = await loadJson("public/data/aedc-seifa-dv2.json");
-  const top = await loadJson("public/data/aedc-top-dv2.json");
+
+  plot(
+    document.querySelector('[data-chart="aedc-lga-map"]'),
+    [
+      {
+        type: "choropleth",
+        geojson: map,
+        locations: map.features.map((f) => f.properties.lga_name),
+        z: map.features.map((f) => f.properties.dv2),
+        featureidkey: "properties.lga_name",
+        colorscale: [
+          [0, "#eef3f8"],
+          [0.45, "#f2b179"],
+          [1, "#9b2c2c"]
+        ],
+        marker: { line: { color: "#ffffff", width: 0.25 } },
+        colorbar: { title: "DV2 %" },
+        customdata: map.features.map((f) => [f.properties.irsd]),
+        hovertemplate: "<b>%{location}</b><br>DV2: %{z:.1f}%<br>IRSD: %{customdata[0]:.0f}<extra></extra>"
+      }
+    ],
+    {
+      ...mapLayout,
+      title: { text: "", x: 0, xanchor: "left" }
+    }
+  );
 
   plot(
     document.querySelector('[data-chart="aedc-seifa-dv2"]'),
@@ -215,31 +278,10 @@ async function renderAedcCharts() {
       }
     ],
     {
-      title: { text: "SEIFA IRSD 与 DV2 关系", x: 0, xanchor: "left" },
+      title: { text: "", x: 0, xanchor: "left" },
       xaxis: { title: "IRSD score (lower = more disadvantaged)", gridcolor: "#e7edf3" },
-      yaxis: { title: "DV2 (%)", gridcolor: "#e7edf3" }
-    }
-  );
-
-  const bars = [...top].reverse();
-  plot(
-    document.querySelector('[data-chart="aedc-top-dv2"]'),
-    [
-      {
-        type: "bar",
-        orientation: "h",
-        x: bars.map((d) => d.dv2),
-        y: bars.map((d) => d.lga),
-        marker: { color: "#167a7f" },
-        customdata: bars.map((d) => d.irsd),
-        hovertemplate: "<b>%{y}</b><br>DV2: %{x:.1f}%<br>IRSD: %{customdata:.0f}<extra></extra>"
-      }
-    ],
-    {
-      title: { text: "Top 20 DV2 LGAs", x: 0, xanchor: "left" },
-      xaxis: { title: "DV2 (%)", gridcolor: "#e7edf3" },
-      yaxis: { automargin: true },
-      margin: { t: 36, r: 20, b: 46, l: 180 }
+      yaxis: { title: "DV2 (%)", gridcolor: "#e7edf3" },
+      margin: { t: 8, r: 20, b: 56, l: 58 }
     }
   );
 }

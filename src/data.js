@@ -48,8 +48,8 @@ export const portfolioData = {
       ],
       tags: ["Market Intelligence", "KPI Design", "SARIMA", "Strategy Deck"],
       interactiveCharts: [
-        { id: "enpak-market", title: "NYC borough 市场指标对比" },
-        { id: "enpak-forecast", title: "SARIMA 12 个月活动趋势预测" }
+        { id: "enpak-market", title: "NYC borough 市场机会地图" },
+        { id: "enpak-forecast", title: "精简版 SARIMA 12 个月预测" }
       ]
     },
     {
@@ -82,8 +82,8 @@ export const portfolioData = {
       ],
       tags: ["LightGBM", "Risk Segmentation", "Feature Engineering", "Dashboard"],
       interactiveCharts: [
-        { id: "credit-score-bands", title: "Holdout 风险分层坏账率" },
-        { id: "credit-feature-importance", title: "Top 15 特征重要性" }
+        { id: "credit-score-bands", title: "风险排序业务价值：坏账率与 Lift" },
+        { id: "credit-feature-importance", title: "Top 15 风险特征（中文释义）" }
       ]
     },
     {
@@ -150,8 +150,8 @@ export const portfolioData = {
       ],
       tags: ["Spatial Analytics", "Policy Insight", "Geo Join", "Data Visualization"],
       interactiveCharts: [
-        { id: "aedc-seifa-dv2", title: "SEIFA IRSD 与 DV2 关系" },
-        { id: "aedc-top-dv2", title: "Top 20 DV2 LGAs" }
+        { id: "aedc-lga-map", title: "澳大利亚 LGA 儿童发展脆弱性地图" },
+        { id: "aedc-seifa-dv2", title: "SEIFA IRSD 与 DV2 关系" }
       ]
     }
   ],
