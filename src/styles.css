@@ -426,6 +426,11 @@ h3 {
   background: #fbfcfe;
 }
 
+.interactive-chart-card:has([data-chart="aedc-lga-map"]),
+.interactive-chart-card:has([data-chart="enpak-market"]) {
+  grid-column: 1 / -1;
+}
+
 .interactive-chart-card h4 {
   margin: 0 0 8px;
   font-size: 16px;
@@ -434,7 +439,12 @@ h3 {
 
 .plotly-chart {
   width: 100%;
-  min-height: 390px;
+  min-height: 430px;
+}
+
+[data-chart="aedc-lga-map"],
+[data-chart="enpak-market"] {
+  min-height: 430px;
 }
 
 .chart-error {

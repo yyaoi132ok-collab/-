@@ -21,10 +21,11 @@ const baseLayout = {
 const mapLayout = {
   ...baseLayout,
   margin: { t: 16, r: 0, b: 0, l: 0 },
+  height: 430,
   geo: {
-    fitbounds: "locations",
     visible: false,
-    projection: { type: "mercator" },
+    projection: { type: "mercator", scale: 1 },
+    center: { lon: 0, lat: 0 },
     bgcolor: "rgba(0,0,0,0)"
   }
 };
@@ -61,11 +62,11 @@ async function renderEnpakCharts() {
         z: market.map((d) => d.business_density),
         featureidkey: "properties.borough",
         colorscale: [
-          [0, "#dcebef"],
-          [0.5, "#61a7a6"],
-          [1, "#0d565a"]
+          [0, "#d9ecf2"],
+          [0.45, "#4b9fa3"],
+          [1, "#083f42"]
         ],
-        marker: { line: { color: "#ffffff", width: 1.2 } },
+        marker: { line: { color: "#ffffff", width: 1.6 } },
         colorbar: { title: "Business<br>density" },
         customdata: market.map((d) => [d.population_density, d.median_income, d.education_share]),
         hovertemplate:
@@ -74,7 +75,14 @@ async function renderEnpakCharts() {
     ],
     {
       ...mapLayout,
-      title: { text: "", x: 0, xanchor: "left" }
+      title: { text: "", x: 0, xanchor: "left" },
+      geo: {
+        ...mapLayout.geo,
+        center: { lon: -73.98, lat: 40.71 },
+        projection: { type: "mercator", scale: 6 },
+        lonaxis: { range: [-74.28, -73.68] },
+        lataxis: { range: [40.48, 40.93] }
+      }
     }
   );
 
@@ -240,11 +248,14 @@ async function renderAedcCharts() {
         z: map.features.map((f) => f.properties.dv2),
         featureidkey: "properties.lga_name",
         colorscale: [
-          [0, "#eef3f8"],
-          [0.45, "#f2b179"],
-          [1, "#9b2c2c"]
+          [0, "#f1f5f8"],
+          [0.35, "#f2c083"],
+          [0.7, "#d06f4f"],
+          [1, "#8f1f1f"]
         ],
-        marker: { line: { color: "#ffffff", width: 0.25 } },
+        zmin: 0,
+        zmax: 82,
+        marker: { line: { color: "rgba(255,255,255,0.9)", width: 0.35 } },
         colorbar: { title: "DV2 %" },
         customdata: map.features.map((f) => [f.properties.irsd]),
         hovertemplate: "<b>%{location}</b><br>DV2: %{z:.1f}%<br>IRSD: %{customdata[0]:.0f}<extra></extra>"
@@ -252,7 +263,14 @@ async function renderAedcCharts() {
     ],
     {
       ...mapLayout,
-      title: { text: "", x: 0, xanchor: "left" }
+      title: { text: "", x: 0, xanchor: "left" },
+      geo: {
+        ...mapLayout.geo,
+        center: { lon: 134, lat: -26 },
+        projection: { type: "mercator", scale: 2.35 },
+        lonaxis: { range: [112, 154.5] },
+        lataxis: { range: [-44.5, -9] }
+      }
     }
   );
 
