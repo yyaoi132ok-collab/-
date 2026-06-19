@@ -27,4 +27,15 @@ if (!dotGridCss.includes('position: fixed;')) {
   throw new Error('DotGrid canvas must be viewport-fixed instead of full-page sized.');
 }
 
+const styles = readFileSync('src/styles.css', 'utf8');
+for (const required of [
+  'min-width: 320px;',
+  '@media (max-width: 768px)',
+  '@media (max-width: 600px)',
+  '.hero-video,\n  .hero-data-panel',
+  '.section-heading.wide,\n  .profile-grid,\n  .project-grid,',
+]) {
+  if (!styles.includes(required)) throw new Error(`Missing mobile layout rule: ${required}`);
+}
+
 console.log('Performance guard checks passed.');

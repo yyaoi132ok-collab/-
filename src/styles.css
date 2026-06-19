@@ -33,7 +33,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 1180px;
+  min-width: 320px;
   background:
     radial-gradient(circle at 18% 12%, rgba(215, 181, 109, 0.12), transparent 34%),
     radial-gradient(circle at 83% 28%, rgba(174, 160, 130, 0.1), transparent 30%),
@@ -1590,10 +1590,6 @@ video {
 }
 
 @media (max-width: 1400px) {
-  body {
-    min-width: 1024px;
-  }
-
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1609,5 +1605,278 @@ video {
   .stats-panel {
     grid-column: 1 / -1;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 720px;
+    padding: 16px 16px 52px;
+  }
+
+  .hero-data-panel {
+    display: none;
+  }
+
+  .nav {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .nav-links {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: stretch;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .nav-cta {
+    min-height: 44px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  .hero-content {
+    padding-top: 16vh;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    font-size: 17px;
+  }
+
+  .hero-actions,
+  .closing-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .primary-action,
+  .secondary-action,
+  .closing-action {
+    width: 100%;
+  }
+
+  .ticker {
+    margin-top: 46px;
+  }
+
+  .section {
+    width: min(100% - 32px, 640px);
+    padding: 72px 0;
+  }
+
+  .section-heading.wide,
+  .profile-grid,
+  .project-grid,
+  .case-grid,
+  .case-charts,
+  .education-grid,
+  .magic-bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2,
+  .closing h2 {
+    font-size: 38px;
+  }
+
+  .section-heading.wide {
+    gap: 0;
+  }
+
+  .portrait-panel,
+  .bio-panel {
+    min-height: auto;
+  }
+
+  .portrait-panel {
+    min-height: 360px;
+  }
+
+  .bio-panel {
+    padding: 28px;
+  }
+
+  .bio-panel .bio-lead {
+    font-size: 24px;
+  }
+
+  .stats-panel {
+    grid-column: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 16px;
+  }
+
+  .education-card {
+    min-height: 0;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
+
+  .project-card.is-expanded {
+    grid-column: span 1;
+    min-height: 0;
+  }
+
+  .project-card.is-muted {
+    display: none;
+  }
+
+  .project-image,
+  .project-card.is-expanded .project-image {
+    height: 250px;
+  }
+
+  .project-body,
+  .case-panel {
+    padding: 22px;
+  }
+
+  .case-panel {
+    padding-top: 0;
+  }
+
+  .case-narrative {
+    position: static;
+  }
+
+  .case-charts .chart-card:first-child {
+    grid-column: span 1;
+  }
+
+  .chart-card {
+    min-height: 320px;
+  }
+
+  .bar-row {
+    grid-template-columns: minmax(92px, 1fr) minmax(86px, 1fr) auto;
+    gap: 8px;
+  }
+
+  .bar-row strong,
+  .bar-row span {
+    font-size: 11px;
+  }
+
+  .closing {
+    min-height: auto;
+    padding: 88px 16px;
+  }
+
+  .closing-inner {
+    width: min(100%, 640px);
+  }
+
+  .closing p:not(.eyebrow) {
+    font-size: 17px;
+  }
+
+  .closing-mark,
+  .cursor-spotlight {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-video,
+  .hero-data-panel {
+    display: none;
+  }
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero-copy {
+    font-size: 16px;
+  }
+
+  .hero-scrim {
+    background: linear-gradient(180deg, rgba(5, 7, 10, 0.7), #05070a 88%);
+  }
+
+  .post-profile-surface > .dot-grid {
+    display: none;
+  }
+
+  .section {
+    width: min(100% - 24px, 540px);
+    padding: 58px 0;
+  }
+
+  .section-heading h2,
+  .closing h2 {
+    font-size: 32px;
+  }
+
+  .portrait-panel {
+    min-height: 320px;
+  }
+
+  .portrait-frame {
+    width: min(70vw, 260px);
+  }
+
+  .contact-strip {
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .contact-strip span {
+    font-size: 12px;
+    padding: 8px 9px;
+  }
+
+  .project-image,
+  .project-card.is-expanded .project-image {
+    height: 220px;
+  }
+
+  .project-card h3,
+  .case-narrative h4,
+  .magic-bento-card__content h3 {
+    font-size: 23px;
+  }
+
+  .project-card p:not(.project-kicker),
+  .case-narrative > p,
+  .magic-bento-card__content p {
+    font-size: 15px;
+  }
+
+  .case-close {
+    position: static;
+    width: 100%;
+    margin: 14px 0 0;
+  }
+
+  .chart-card {
+    min-height: 280px;
+  }
+
+  .geo-chart,
+  .svg-chart,
+  .bar-chart {
+    padding: 8px 10px 14px;
+  }
+
+  .magic-bento-card {
+    min-height: 210px;
+    padding: 22px;
   }
 }
