@@ -304,11 +304,43 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 12px;
   min-height: 310px;
   padding: 22px;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.project-card.active {
+  border-color: rgba(22, 122, 127, 0.62);
+  box-shadow: 0 18px 48px rgba(22, 122, 127, 0.16);
+  transform: translateY(-2px);
+}
+
+.project-card:hover {
+  border-color: rgba(22, 122, 127, 0.48);
+}
+
+.project-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.project-summary {
+  display: block;
+  color: var(--muted);
 }
 
 .project-card h3,
+.project-title,
 .case-header h2 {
   overflow-wrap: anywhere;
 }
@@ -330,6 +362,15 @@ h3 {
 .project-card-footer a {
   color: var(--accent-strong);
   font-weight: 800;
+}
+
+.project-card-footer span {
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
+.active-case-panel {
+  margin-top: 22px;
 }
 
 .case-header {
@@ -369,6 +410,36 @@ h3 {
 
 .chart-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.interactive-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.interactive-chart-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfcfe;
+}
+
+.interactive-chart-card h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.plotly-chart {
+  width: 100%;
+  min-height: 390px;
+}
+
+.chart-error {
+  color: #9b2c2c;
+  font-weight: 700;
 }
 
 .chart-card {
@@ -430,6 +501,10 @@ h3 {
   }
 
   .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interactive-chart-grid {
     grid-template-columns: 1fr;
   }
 }

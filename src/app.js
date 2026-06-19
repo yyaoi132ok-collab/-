@@ -1,6 +1,8 @@
 import { portfolioData } from "./data.js";
+import { renderProjectCharts } from "./charts.js";
 
 const app = document.querySelector("#app");
+let activeProjectId = "enpak";
 
 function escapeHtml(value) {
   return String(value)
@@ -13,6 +15,10 @@ function escapeHtml(value) {
 
 function renderTags(tags) {
   return tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("");
+}
+
+function getActiveProject() {
+  return portfolioData.projects.find((project) => project.id === activeProjectId) || portfolioData.projects[0];
 }
 
 function renderHero(data) {
@@ -75,51 +81,50 @@ function renderImpact(metrics) {
 }
 
 function renderProjectCard(project) {
+  const activeClass = project.id === activeProjectId ? " active" : "";
   return `
-    <article class="project-card">
-      <div>
-        <p class="project-domain">${escapeHtml(project.domain)}</p>
-        <h3>${escapeHtml(project.title)}</h3>
-        <p>${escapeHtml(project.summary)}</p>
-      </div>
-      <div class="project-card-footer">
+    <button class="project-card${activeClass}" type="button" data-project-id="${escapeHtml(project.id)}" aria-pressed="${project.id === activeProjectId}">
+      <span class="project-domain">${escapeHtml(project.domain)}</span>
+      <span class="project-title">${escapeHtml(project.title)}</span>
+      <span class="project-summary">${escapeHtml(project.summary)}</span>
+      <span class="project-card-footer">
         <strong>${escapeHtml(project.featuredMetric)}</strong>
-        <a href="#case-${escapeHtml(project.id)}">查看详情</a>
-      </div>
-      <div class="tag-row">${renderTags(project.tags)}</div>
-    </article>
+        <span>查看详情</span>
+      </span>
+      <span class="tag-row">${renderTags(project.tags)}</span>
+    </button>
   `;
 }
 
 function renderProjects(projects) {
+  const active = getActiveProject();
   return `
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="section-heading">
         <p class="eyebrow">Case Studies</p>
-        <h2 id="projects-title">四个能支撑面试追问的分析项目</h2>
-        <p>每个项目都围绕业务问题展开，展示数据来源、方法、关键结果和可执行建议。</p>
+        <h2 id="projects-title">四个清晰分栏的分析项目</h2>
+        <p>点击项目卡切换详情。页面每次只展开一个项目，避免长页面堆叠。</p>
       </div>
-      <div class="project-grid">
+      <div class="project-grid project-switcher">
         ${projects.map(renderProjectCard).join("")}
+      </div>
+      <div id="active-case-study" class="active-case-panel">
+        ${renderCaseStudy(active)}
       </div>
     </section>
   `;
 }
 
-function renderChartGallery(project) {
-  if (!project.charts.length) {
-    return `<p class="muted">图表将在脱敏整理后加入；当前先展示方法、指标和业务结论。</p>`;
-  }
-
+function renderChartContainers(project) {
   return `
-    <div class="chart-grid">
-      ${project.charts
+    <div class="interactive-chart-grid">
+      ${project.interactiveCharts
         .map(
           (chart) => `
-            <figure class="chart-card">
-              <img src="${escapeHtml(chart.src)}" alt="${escapeHtml(chart.alt)}" loading="lazy" />
-              <figcaption>${escapeHtml(chart.caption)}</figcaption>
-            </figure>
+            <article class="interactive-chart-card">
+              <h4>${escapeHtml(chart.title)}</h4>
+              <div class="plotly-chart" data-chart="${escapeHtml(chart.id)}" aria-label="${escapeHtml(chart.title)}"></div>
+            </article>
           `
         )
         .join("")}
@@ -129,7 +134,7 @@ function renderChartGallery(project) {
 
 function renderCaseStudy(project) {
   return `
-    <section class="case-study" id="case-${escapeHtml(project.id)}" aria-labelledby="${escapeHtml(project.id)}-title">
+    <article class="case-study active-case" id="case-${escapeHtml(project.id)}" aria-labelledby="${escapeHtml(project.id)}-title">
       <div class="case-header">
         <p class="eyebrow">${escapeHtml(project.period)}</p>
         <h2 id="${escapeHtml(project.id)}-title">${escapeHtml(project.title)}</h2>
@@ -167,10 +172,10 @@ function renderCaseStudy(project) {
         </aside>
       </div>
       <div class="case-charts">
-        <h3>图表展示</h3>
-        ${renderChartGallery(project)}
+        <h3>交互图表</h3>
+        ${renderChartContainers(project)}
       </div>
-    </section>
+    </article>
   `;
 }
 
@@ -231,17 +236,30 @@ function renderContact(data) {
   `;
 }
 
-function renderApp(data) {
+function bindProjectSwitcher() {
+  document.querySelectorAll("[data-project-id]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      activeProjectId = button.dataset.projectId;
+      document.querySelector("#projects").outerHTML = renderProjects(portfolioData.projects);
+      bindProjectSwitcher();
+      await renderProjectCharts(activeProjectId);
+      document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+}
+
+async function renderApp(data) {
   document.title = data.person.browserTitle;
   app.innerHTML = [
     renderHero(data),
     renderImpact(data.impact),
     renderProjects(data.projects),
-    ...data.projects.map(renderCaseStudy),
     renderSkills(data),
     renderExperience(data),
     renderContact(data)
   ].join("");
+  bindProjectSwitcher();
+  await renderProjectCharts(activeProjectId);
 }
 
 renderApp(portfolioData);
