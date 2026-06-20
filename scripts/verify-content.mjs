@@ -308,6 +308,7 @@ for (const layoutRequirement of [
   'grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);',
   'min-height: 300px;',
   '.reference-letter-mark img',
+  '.reference-letter-action {\n  position: absolute;',
 ]) {
   if (!referenceCardCss.includes(layoutRequirement) && !styles.includes(layoutRequirement)) {
     throw new Error(`Recommendation card is not aligned with Student Success: ${layoutRequirement}`);

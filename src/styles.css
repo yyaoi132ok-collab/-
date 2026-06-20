@@ -804,10 +804,14 @@ video {
 }
 
 .reference-letter-action {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-top: 22px;
+  padding: 28px;
   color: #fff1c7;
   white-space: nowrap;
 }
@@ -1946,8 +1950,9 @@ video {
   }
 
   .reference-letter-action {
+    position: static;
     justify-content: flex-start;
-    margin-top: 18px;
+    padding: 0 28px 28px;
   }
 
   .student-success-mark,
