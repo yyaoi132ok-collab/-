@@ -887,7 +887,7 @@ video {
 
 .official-feature-banner {
   display: grid;
-  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);
   align-items: stretch;
   min-height: 340px;
   color: inherit;
@@ -914,6 +914,10 @@ video {
 }
 
 .official-feature-action {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -1970,6 +1974,7 @@ video {
   }
 
   .official-feature-action {
+    position: static;
     justify-content: flex-start;
     padding: 0 28px 28px;
   }

@@ -320,7 +320,7 @@ for (const layoutRequirement of [
 
 const officialFeatureHover = styles.indexOf('.official-feature-banner:hover {');
 const officialFeatureCss = styles.slice(styles.lastIndexOf('.official-feature-banner {', officialFeatureHover), officialFeatureHover);
-if (!officialFeatureCss.includes('grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr) auto;')) {
+if (!officialFeatureCss.includes('grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);')) {
   throw new Error('Official feature text must align with the reference and Student Success copy columns.');
 }
 
