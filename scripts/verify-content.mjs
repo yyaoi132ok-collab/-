@@ -337,6 +337,8 @@ for (const profileRequirement of [
 
 for (const resumeRequirement of [
   'resume-download',
+  'resume-download-label',
+  '下载简历',
   'aria-label="下载简历 PDF"',
   '/assets/references/yi-yao-resume.pdf',
   'download="姚羿-数据分析简历.pdf"',

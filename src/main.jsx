@@ -1281,15 +1281,18 @@ function Contact() {
           </a>
           <a className="closing-action" href="tel:15340554050">15340554050</a>
           <span className="closing-action">微信 YYaoi001</span>
-          <a
-            className="resume-download"
-            href="/assets/references/yi-yao-resume.pdf"
-            download="姚羿-数据分析简历.pdf"
-            aria-label="下载简历 PDF"
-            title="下载简历 PDF"
-          >
-            <FileText size={21} aria-hidden="true" />
-          </a>
+          <div className="resume-download-item">
+            <a
+              className="resume-download"
+              href="/assets/references/yi-yao-resume.pdf"
+              download="姚羿-数据分析简历.pdf"
+              aria-label="下载简历 PDF"
+              title="下载简历 PDF"
+            >
+              <FileText size={21} aria-hidden="true" />
+            </a>
+            <span className="resume-download-label">下载简历</span>
+          </div>
         </div>
       </div>
       <Sparkles className="closing-mark" size={180} aria-hidden="true" />
