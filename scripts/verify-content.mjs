@@ -11,6 +11,7 @@ const requiredAssets = [
   "public/assets/education/usyd-bg.svg",
   "public/assets/education/utas-bg.svg",
   "public/assets/education/swu-bg.svg",
+  "public/assets/references/steven-hitchcock-recommendation.pdf",
   "public/data/nyc-boroughs.geojson",
   "public/data/aedc-lga-map.geojson"
 ];
@@ -234,6 +235,7 @@ if (usydEmblem.includes('#141414') || !usydEmblem.includes('#D7B56D')) {
 }
 
 const studentSuccessRequirements = [
+  '海外学生工作',
   'Student Success Leader',
   'Chinese Outreach',
   'University of Tasmania',
@@ -270,6 +272,34 @@ if (source.indexOf('student-success-card') > source.indexOf('official-feature-ba
 for (const confidentialDetail of ['28.64', 'James Chester', 'Fazlinda Kassim']) {
   if (source.includes(confidentialDetail)) {
     throw new Error(`Confidential offer detail published: ${confidentialDetail}`);
+  }
+}
+
+const recommendationRequirements = [
+  'reference-letter-card',
+  'Dr Steven Hitchcock 推荐信',
+  'BWIL6215: International Industry Placement Program',
+  '/assets/references/steven-hitchcock-recommendation.pdf',
+  'Academic Reference',
+];
+
+for (const requirement of recommendationRequirements) {
+  if (!source.includes(requirement)) {
+    throw new Error(`Recommendation card is missing: ${requirement}`);
+  }
+}
+
+if (source.indexOf('reference-letter-card') > source.indexOf('student-success-card')) {
+  throw new Error('Recommendation card must appear before Student Success.');
+}
+
+for (const profileRequirement of [
+  '我是悉尼大学 Business School 的 Data Analytics 硕士',
+  '跨文化团队协作',
+  '不同国家与文化背景成员',
+]) {
+  if (!source.includes(profileRequirement)) {
+    throw new Error(`Profile update is missing: ${profileRequirement}`);
   }
 }
 
