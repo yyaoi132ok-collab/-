@@ -315,6 +315,12 @@ for (const layoutRequirement of [
   }
 }
 
+const officialFeatureHover = styles.indexOf('.official-feature-banner:hover {');
+const officialFeatureCss = styles.slice(styles.lastIndexOf('.official-feature-banner {', officialFeatureHover), officialFeatureHover);
+if (!officialFeatureCss.includes('grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr) auto;')) {
+  throw new Error('Official feature text must align with the reference and Student Success copy columns.');
+}
+
 for (const profileRequirement of [
   '我是悉尼大学 Business School 的 Data Analytics 硕士',
   '跨文化团队协作',

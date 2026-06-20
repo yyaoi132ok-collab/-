@@ -885,7 +885,7 @@ video {
 
 .official-feature-banner {
   display: grid;
-  grid-template-columns: minmax(170px, 0.25fr) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr) auto;
   align-items: stretch;
   min-height: 340px;
   color: inherit;
