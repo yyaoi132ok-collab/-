@@ -512,8 +512,7 @@ function ExperienceHighlights() {
         </div>
         <div className="student-success-content">
           <p className="eyebrow">Student Employment</p>
-          <p className="student-success-kicker">海外学生工作</p>
-          <h3>Student Success Leader</h3>
+          <h3>海外学生工作｜Student Success Leader</h3>
           <p className="student-success-meta">University of Tasmania · Chinese Outreach · 2022</p>
           <ul>
             <li>主动联系需要额外支持的学生</li>

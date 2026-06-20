@@ -237,8 +237,7 @@ if (usydEmblem.includes('#141414') || !usydEmblem.includes('#D7B56D')) {
 }
 
 const studentSuccessRequirements = [
-  '海外学生工作',
-  'Student Success Leader',
+  '海外学生工作｜Student Success Leader',
   'Chinese Outreach',
   'University of Tasmania',
   '2022',
@@ -275,6 +274,10 @@ for (const confidentialDetail of ['28.64', 'James Chester', 'Fazlinda Kassim']) 
   if (source.includes(confidentialDetail)) {
     throw new Error(`Confidential offer detail published: ${confidentialDetail}`);
   }
+}
+
+if (source.includes('student-success-kicker')) {
+  throw new Error('Student Success must use a combined heading instead of a separate kicker.');
 }
 
 const recommendationRequirements = [

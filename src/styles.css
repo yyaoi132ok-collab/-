@@ -855,14 +855,6 @@ video {
   line-height: 1.7;
 }
 
-.student-success-kicker {
-  margin: 0;
-  color: #d7b56d;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
 .student-success-content ul {
   display: grid;
   gap: 10px;
