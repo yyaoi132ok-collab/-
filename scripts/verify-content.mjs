@@ -349,8 +349,8 @@ for (const resumeRequirement of [
   }
 }
 
-if (!styles.includes('.resume-download-label {\n  min-height: 58px;')) {
-  throw new Error('Resume download label must be enclosed in a matching bordered rectangle.');
+if (!styles.includes('.resume-download-item {\n  min-height: 58px;')) {
+  throw new Error('Resume icon and label must share one matching bordered rectangle.');
 }
 
 for (const requiredFix of [
