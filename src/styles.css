@@ -663,7 +663,7 @@ video {
 
 .education-logo-usyd img {
   width: min(72%, 340px);
-  filter: brightness(0) saturate(100%) invert(77%) sepia(33%) saturate(628%) hue-rotate(4deg) brightness(94%) contrast(92%) drop-shadow(0 12px 28px rgba(215, 181, 109, 0.15));
+  filter: drop-shadow(0 12px 28px rgba(215, 181, 109, 0.15));
 }
 
 .education-logo-utas img {

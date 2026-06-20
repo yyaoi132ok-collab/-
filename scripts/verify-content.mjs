@@ -201,6 +201,11 @@ for (const projectAsset of [
   }
 }
 
+const usydEmblem = readFileSync("public/assets/education/usyd-emblem.svg", "utf8");
+if (usydEmblem.includes('#141414') || !usydEmblem.includes('#D7B56D')) {
+  throw new Error("USYD emblem must be natively gold for mobile browser compatibility.");
+}
+
 for (const requiredFix of [
   '.project-card:not([data-project-id="enpak"]) .project-image img',
   'mix-blend-mode: screen;',
