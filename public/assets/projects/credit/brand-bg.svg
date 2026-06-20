@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090806"/>
+      <stop offset="1" stop-color="#171106"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="48%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#f28c28" stop-opacity=".34"/>
+      <stop offset=".48" stop-color="#d7b56d" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g transform="translate(250 192)">
+    <text x="0" y="118" fill="#f28c28" font-family="Arial, Helvetica, sans-serif" font-size="118" font-weight="700">Alibaba</text>
+    <path d="M38 190c132 86 352 86 492 0" fill="none" stroke="#f28c28" stroke-width="24" stroke-linecap="round"/>
+    <path d="M486 176l66 24-62 33" fill="none" stroke="#f28c28" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="74" y="626" fill="#d7b56d" opacity=".8" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">CREDIT RISK MODELLING</text>
+</svg>

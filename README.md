@@ -1,23 +1,29 @@
-# Yi Yao Data Analytics Portfolio
+# 姚羿数据分析作品集网站
 
-中文数据分析作品集网站，展示商业增长、金融风控、空间数据分析和可视化项目。
-
-## Local Preview
+## 本地运行
 
 ```bash
-npm run serve
+npm install
+npm run dev
 ```
 
-Open `http://127.0.0.1:4173`.
+打开终端显示的本地地址，默认是 `http://127.0.0.1:4173/`。
 
-## Checks
+## 常用命令
 
 ```bash
 npm run check
-node --check src/app.js
-node --check src/data.js
+npm run build
+npm run preview
 ```
 
-## Privacy Boundary
+- `check` 检查作品集文案、资源与关键视觉规则。
+- `build` 生成生产版本到 `dist/`。
+- `preview` 预览已构建的生产版本。
 
-The site intentionally does not publish raw data, notebooks, original reports, internal decks, phone number, or downloadable project files. It only shows project summaries, methods, selected metrics, and sanitized chart images.
+## 目录说明
+
+- `src/` React 页面与样式。
+- `public/` 项目图表、地图数据、校徽与头像资源。
+- `scripts/` 内容检查脚本。
+- `dist/` 当前已构建的可部署静态文件。

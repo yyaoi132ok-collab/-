@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070706"/>
+      <stop offset="1" stop-color="#151007"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="56%" cy="40%" r="62%">
+      <stop offset="0" stop-color="#d7b56d" stop-opacity=".25"/>
+      <stop offset=".52" stop-color="#7a6130" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path d="M564 132c82 20 144 90 168 160 20 56 78 64 120 116 34 42 16 96-44 108-54 10-102-16-150 20-68 52-166 50-244 12-74-36-116-100-104-170 12-72 74-92 116-136 38-40 58-130 138-110Z" fill="none" stroke="#f2d58a" stroke-width="7" opacity=".72"/>
+  <g fill="#d7b56d" opacity=".75">
+    <circle cx="534" cy="246" r="9"/><circle cx="620" cy="300" r="7"/><circle cx="704" cy="392" r="10"/><circle cx="462" cy="416" r="8"/><circle cx="586" cy="500" r="6"/>
+  </g>
+  <text x="80" y="160" fill="#f2d58a" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">AEDC</text>
+  <text x="80" y="214" fill="#b7a06d" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">SPATIAL ACCESSIBILITY / DEVELOPMENT VULNERABILITY</text>
+  <text x="74" y="626" fill="#d7b56d" opacity=".8" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">LGA RISK AND SERVICE ACCESS</text>
+</svg>

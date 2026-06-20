@@ -1,0 +1,31 @@
+.dot-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dot-grid__canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.post-profile-surface {
+  position: relative;
+  isolation: isolate;
+}
+
+.post-profile-surface > .dot-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.58;
+  mask-image: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+}
+
+.post-profile-surface__content {
+  position: relative;
+  z-index: 1;
+}

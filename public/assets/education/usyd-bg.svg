@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080706"/><stop offset="1" stop-color="#181107"/></linearGradient><radialGradient id="r" cx="45%" cy="42%" r="62%"><stop stop-color="#d7b56d" stop-opacity=".3"/><stop offset="1" stop-opacity="0"/></radialGradient></defs>
+  <rect width="900" height="520" fill="url(#g)"/><rect width="900" height="520" fill="url(#r)"/>
+  <g stroke="#d7b56d" stroke-opacity=".16"><path d="M0 92h900M0 184h900M0 276h900M0 368h900M0 460h900"/><path d="M92 0v520M184 0v520M276 0v520M368 0v520M460 0v520M552 0v520M644 0v520M736 0v520M828 0v520"/></g>
+  <g transform="translate(92 82)" fill="none" stroke="#f2d58a" stroke-width="8" opacity=".84">
+    <path d="M152 26l132 42v106c0 84-56 132-132 168C76 306 20 258 20 174V68z"/>
+    <path d="M20 128h264M152 128v172M82 206h140"/>
+    <path d="M114 232h76M114 252h76M114 272h76"/>
+    <path d="M78 86c34-24 80-20 112 8 22 18 48 18 72 0"/>
+    <path d="M78 148l22 18-22 18M226 148l-22 18 22 18"/>
+  </g>
+  <text x="420" y="200" fill="#f2d58a" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">USYD</text>
+  <text x="420" y="252" fill="#b7a06d" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">UNIVERSITY OF SYDNEY</text>
+</svg>

@@ -1,0 +1,12 @@
+.text-type {
+  display: inline-block;
+  min-height: 1.2em;
+  white-space: pre-wrap;
+}
+
+.text-type__cursor {
+  display: inline-block;
+  margin-left: 0.18em;
+  color: #d7b56d;
+  font-weight: 400;
+}
