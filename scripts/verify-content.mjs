@@ -349,6 +349,10 @@ for (const resumeRequirement of [
   }
 }
 
+if (!styles.includes('.resume-download-label {\n  min-height: 58px;')) {
+  throw new Error('Resume download label must be enclosed in a matching bordered rectangle.');
+}
+
 for (const requiredFix of [
   '.project-card:not([data-project-id="enpak"]) .project-image img',
   'mix-blend-mode: screen;',
