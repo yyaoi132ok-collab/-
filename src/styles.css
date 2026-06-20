@@ -709,6 +709,147 @@ video {
   font-size: 14px;
 }
 
+.experience-highlights {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.student-success-card,
+.official-feature-banner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid rgba(215, 181, 109, 0.22);
+  background:
+    radial-gradient(circle at 76% 34%, rgba(215, 181, 109, 0.16), transparent 34%),
+    linear-gradient(90deg, rgba(215, 181, 109, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(215, 181, 109, 0.08) 1px, transparent 1px),
+    #090b0e;
+  background-size: auto, 56px 56px, 56px 56px, auto;
+}
+
+.student-success-card::after,
+.official-feature-banner::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background: linear-gradient(110deg, transparent 42%, rgba(215, 181, 109, 0.07), transparent 76%);
+  transform: translateX(-46%);
+  transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.student-success-card:hover::after,
+.official-feature-banner:hover::after {
+  transform: translateX(42%);
+}
+
+.student-success-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);
+  min-height: 300px;
+}
+
+.student-success-mark,
+.official-feature-mark {
+  display: grid;
+  place-items: center;
+  padding: 34px;
+}
+
+.student-success-mark img,
+.official-feature-mark img {
+  width: min(100%, 220px);
+  max-height: 180px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(215, 181, 109, 0.2));
+}
+
+.student-success-content,
+.official-feature-copy {
+  position: relative;
+  z-index: 1;
+  padding: 38px;
+}
+
+.student-success-content h3,
+.official-feature-copy h3 {
+  margin: 10px 0 12px;
+  color: #f2f8fb;
+  font-size: clamp(28px, 3vw, 46px);
+  line-height: 1.08;
+}
+
+.student-success-meta,
+.official-feature-copy > p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.student-success-content ul {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  color: #cbd6df;
+  list-style: none;
+}
+
+.student-success-content li::before {
+  margin-right: 10px;
+  color: var(--accent);
+  content: "01";
+  font-variant-numeric: tabular-nums;
+}
+
+.student-success-content li:nth-child(2)::before {
+  content: "02";
+}
+
+.student-success-content li:nth-child(3)::before {
+  content: "03";
+}
+
+.official-feature-banner {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.25fr) minmax(0, 1fr) auto;
+  align-items: stretch;
+  min-height: 340px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.official-feature-banner:hover {
+  border-color: rgba(215, 181, 109, 0.68);
+}
+
+.official-feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.official-feature-tags span {
+  border: 1px solid rgba(215, 181, 109, 0.22);
+  padding: 8px 10px;
+  color: #d7b56d;
+  font-size: 13px;
+}
+
+.official-feature-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  align-self: end;
+  padding: 28px;
+  color: #fff1c7;
+  white-space: nowrap;
+}
+
 .stat {
   width: 100%;
   text-align: left;
@@ -1718,6 +1859,27 @@ video {
 
   .education-card {
     min-height: 0;
+  }
+
+  .student-success-card,
+  .official-feature-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .student-success-mark,
+  .official-feature-mark {
+    min-height: 170px;
+    padding: 28px 28px 0;
+  }
+
+  .student-success-content,
+  .official-feature-copy {
+    padding: 28px;
+  }
+
+  .official-feature-action {
+    justify-content: flex-start;
+    padding: 0 28px 28px;
   }
 
   .project-card {
