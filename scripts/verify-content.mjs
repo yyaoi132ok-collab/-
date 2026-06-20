@@ -54,6 +54,21 @@ if (!html.includes("/src/main.jsx")) {
 }
 
 const source = readFileSync("src/main.jsx", "utf8");
+for (const strengthRequirement of [
+  '英语沟通与跨文化协作',
+  'PTE 四项 7 分',
+  '大学英语六级 510 分',
+  'AI 应用与快速交付',
+  '短剧内容制作',
+  'Vibe Coding',
+  '个人网站搭建',
+  'Languages',
+]) {
+  if (!source.includes(strengthRequirement)) {
+    throw new Error(`Strength card is missing: ${strengthRequirement}`);
+  }
+}
+
 const projectCount = source.split("image: '/assets/projects").length - 1;
 if (projectCount !== 4) {
   throw new Error(`Expected 4 portfolio project cards, found ${projectCount}`);
