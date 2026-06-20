@@ -7,12 +7,14 @@ import {
   BarChart3,
   BrainCircuit,
   Database,
+  FileText,
   Languages,
   LineChart,
   Mail,
   Map,
   ShieldCheck,
   Sparkles,
+  UsersRound,
 } from 'lucide-react';
 import { portfolioData } from './data.js';
 import DotGrid from './DotGrid.jsx';
@@ -110,6 +112,11 @@ const strengths = [
     icon: Sparkles,
     title: 'AI 应用与快速交付',
     text: '使用生成式 AI 完成短剧内容制作、Vibe Coding 与个人网站搭建，将想法快速转化为可运行的数字作品。',
+  },
+  {
+    icon: UsersRound,
+    title: '跨文化团队协作',
+    text: '参与由不同国家与文化背景成员组成的项目团队，能在分工、沟通与协作节奏中有效协调，推进共同交付。',
   },
 ];
 
@@ -480,12 +487,33 @@ function Ticker({ openProject }) {
 function ExperienceHighlights() {
   return (
     <div className="experience-highlights reveal-item" aria-label="学生工作与官方报道">
+      <a
+        className="reference-letter-card tilt-card"
+        href="/assets/references/steven-hitchcock-recommendation.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className="reference-letter-mark" aria-hidden="true">
+          <FileText size={42} strokeWidth={1.3} />
+        </div>
+        <div className="reference-letter-copy">
+          <p className="eyebrow">Academic Reference / USYD Business School</p>
+          <h3>Dr Steven Hitchcock 推荐信</h3>
+          <p>悉尼大学商学院高级讲师对国际行业实践表现的正式评价，肯定专业准备、分析思维、沟通协作与国际职业环境适应力。</p>
+          <span>BWIL6215: International Industry Placement Program · 2023</span>
+        </div>
+        <span className="reference-letter-action">
+          预览推荐信 <ArrowUpRight size={18} aria-hidden="true" />
+        </span>
+      </a>
+
       <article className="student-success-card tilt-card">
         <div className="student-success-mark" aria-hidden="true">
           <img src="/assets/education/utas-emblem-gold.png" alt="" loading="lazy" decoding="async" />
         </div>
         <div className="student-success-content">
           <p className="eyebrow">Student Employment</p>
+          <p className="student-success-kicker">海外学生工作</p>
           <h3>Student Success Leader</h3>
           <p className="student-success-meta">University of Tasmania · Chinese Outreach · 2022</p>
           <ul>
@@ -551,7 +579,7 @@ function Profile({ openProject }) {
         </div>
         <div className="bio-panel tilt-card reveal-item">
           <p className="bio-lead">
-            我毕业于悉尼大学 Business School 的 Data Analytics 硕士，具有西南大学电子信息工程本科背景，项目经历覆盖海外市场分析、信贷风控、公益捐赠优化与教育空间数据分析。
+            我是悉尼大学 Business School 的 Data Analytics 硕士，具有西南大学电子信息工程本科背景，项目经历覆盖海外市场分析、信贷风控、公益捐赠优化与教育空间数据分析。
           </p>
           <p>
             我的优势不是只把图做出来，而是从业务目标反推数据结构、指标口径和故事线：哪些地区先进入，哪些客户更高风险，哪些页面影响转化，哪些地区最需要服务补位。
