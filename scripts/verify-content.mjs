@@ -206,6 +206,46 @@ if (usydEmblem.includes('#141414') || !usydEmblem.includes('#D7B56D')) {
   throw new Error("USYD emblem must be natively gold for mobile browser compatibility.");
 }
 
+const studentSuccessRequirements = [
+  'Student Success Leader',
+  'Chinese Outreach',
+  'University of Tasmania',
+  '2022',
+  '主动联系需要额外支持的学生',
+  '升学、就业、实习与校园支持资源',
+  '中文学生跨文化支持',
+  'student-success-card',
+];
+
+const officialFeatureRequirements = [
+  'official-feature-banner',
+  'OFFICIAL FEATURE / 西南大学西塔学院',
+  '海外学子风采｜姚羿：为明天谱写新的可能',
+  '校长激励奖一等奖',
+  '2+2 国际培养',
+  '学生组织与协作',
+  '海外升学',
+  'https://mp.weixin.qq.com/s/hgu61u2-5xiz6NrdqE1w3Q',
+  'target="_blank"',
+  'rel="noreferrer"',
+];
+
+for (const requirement of [...studentSuccessRequirements, ...officialFeatureRequirements]) {
+  if (!source.includes(requirement)) {
+    throw new Error(`Experience highlight is missing: ${requirement}`);
+  }
+}
+
+if (source.indexOf('student-success-card') > source.indexOf('official-feature-banner')) {
+  throw new Error('Student Success must appear before the official feature banner.');
+}
+
+for (const confidentialDetail of ['28.64', 'James Chester', 'Fazlinda Kassim']) {
+  if (source.includes(confidentialDetail)) {
+    throw new Error(`Confidential offer detail published: ${confidentialDetail}`);
+  }
+}
+
 for (const requiredFix of [
   '.project-card:not([data-project-id="enpak"]) .project-image img',
   'mix-blend-mode: screen;',
