@@ -520,6 +520,14 @@ function ExperienceHighlights() {
             <li>提供中文学生跨文化支持与沟通</li>
           </ul>
         </div>
+        <a
+          className="student-success-action"
+          href="/assets/references/utas-student-success-offer.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          预览 Offer <ArrowUpRight size={18} aria-hidden="true" />
+        </a>
       </article>
 
       <a

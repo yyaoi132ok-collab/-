@@ -12,6 +12,7 @@ const requiredAssets = [
   "public/assets/education/utas-bg.svg",
   "public/assets/education/swu-bg.svg",
   "public/assets/references/steven-hitchcock-recommendation.pdf",
+  "public/assets/references/utas-student-success-offer.pdf",
   "public/data/nyc-boroughs.geojson",
   "public/data/aedc-lga-map.geojson"
 ];
@@ -245,6 +246,8 @@ const studentSuccessRequirements = [
   '升学、就业、实习与校园支持资源',
   '中文学生跨文化支持',
   'student-success-card',
+  'student-success-action',
+  '/assets/references/utas-student-success-offer.pdf',
 ];
 
 const officialFeatureRequirements = [
@@ -308,7 +311,7 @@ for (const layoutRequirement of [
   'grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);',
   'min-height: 300px;',
   '.reference-letter-mark img',
-  '.reference-letter-action {\n  position: absolute;',
+  '.reference-letter-action,\n.student-success-action {\n  position: absolute;',
 ]) {
   if (!referenceCardCss.includes(layoutRequirement) && !styles.includes(layoutRequirement)) {
     throw new Error(`Recommendation card is not aligned with Student Success: ${layoutRequirement}`);

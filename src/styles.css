@@ -803,7 +803,8 @@ video {
   font-size: 13px;
 }
 
-.reference-letter-action {
+.reference-letter-action,
+.student-success-action {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -813,6 +814,7 @@ video {
   gap: 10px;
   padding: 28px;
   color: #fff1c7;
+  text-decoration: none;
   white-space: nowrap;
 }
 
@@ -1949,7 +1951,8 @@ video {
     padding: 28px;
   }
 
-  .reference-letter-action {
+  .reference-letter-action,
+  .student-success-action {
     position: static;
     justify-content: flex-start;
     padding: 0 28px 28px;
