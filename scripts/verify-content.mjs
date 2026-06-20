@@ -11,6 +11,9 @@ const requiredAssets = [
   "public/assets/education/usyd-bg.svg",
   "public/assets/education/utas-bg.svg",
   "public/assets/education/swu-bg.svg",
+  "public/assets/references/steven-hitchcock-recommendation.pdf",
+  "public/assets/references/utas-student-success-offer.pdf",
+  "public/assets/references/yi-yao-resume.pdf",
   "public/data/nyc-boroughs.geojson",
   "public/data/aedc-lga-map.geojson"
 ];
@@ -54,6 +57,21 @@ if (!html.includes("/src/main.jsx")) {
 }
 
 const source = readFileSync("src/main.jsx", "utf8");
+for (const strengthRequirement of [
+  '英语沟通与跨文化协作',
+  'PTE 四项 7 分',
+  '大学英语六级 510 分',
+  'AI 应用与快速交付',
+  '短剧内容制作',
+  'Vibe Coding',
+  '个人网站搭建',
+  'Languages',
+]) {
+  if (!source.includes(strengthRequirement)) {
+    throw new Error(`Strength card is missing: ${strengthRequirement}`);
+  }
+}
+
 const projectCount = source.split("image: '/assets/projects").length - 1;
 if (projectCount !== 4) {
   throw new Error(`Expected 4 portfolio project cards, found ${projectCount}`);
@@ -132,6 +150,20 @@ if (source.includes("四个项目按经历类型分栏展示：海外实习、�
 }
 
 const styles = readFileSync("src/styles.css", "utf8");
+for (const className of [
+  '.experience-highlights',
+  '.reference-letter-card',
+  '.reference-letter-action',
+  '.student-success-card',
+  '.official-feature-banner',
+  '.official-feature-tags',
+  '.official-feature-action',
+]) {
+  if (!styles.includes(className)) {
+    throw new Error(`Experience visual treatment is missing: ${className}`);
+  }
+}
+
 for (const requiredStyle of [
   ".education-card::before",
   "mask-image: linear-gradient(to bottom",
@@ -204,6 +236,121 @@ for (const projectAsset of [
 const usydEmblem = readFileSync("public/assets/education/usyd-emblem.svg", "utf8");
 if (usydEmblem.includes('#141414') || !usydEmblem.includes('#D7B56D')) {
   throw new Error("USYD emblem must be natively gold for mobile browser compatibility.");
+}
+
+const studentSuccessRequirements = [
+  '海外学生工作｜Student Success Leader',
+  'Chinese Outreach',
+  'University of Tasmania',
+  '2022',
+  '主动联系需要额外支持的学生',
+  '升学、就业、实习与校园支持资源',
+  '中文学生跨文化支持',
+  'student-success-card',
+  'student-success-action',
+  '/assets/references/utas-student-success-offer.pdf',
+];
+
+const officialFeatureRequirements = [
+  'official-feature-banner',
+  'OFFICIAL FEATURE / 西南大学西塔学院',
+  '海外学子风采｜姚羿：为明天谱写新的可能',
+  '校长激励奖一等奖',
+  '2+2 国际培养',
+  '学生组织与协作',
+  '海外升学',
+  'https://mp.weixin.qq.com/s/hgu61u2-5xiz6NrdqE1w3Q',
+  'target="_blank"',
+  'rel="noreferrer"',
+];
+
+for (const requirement of [...studentSuccessRequirements, ...officialFeatureRequirements]) {
+  if (!source.includes(requirement)) {
+    throw new Error(`Experience highlight is missing: ${requirement}`);
+  }
+}
+
+if (source.indexOf('student-success-card') > source.indexOf('official-feature-banner')) {
+  throw new Error('Student Success must appear before the official feature banner.');
+}
+
+for (const confidentialDetail of ['28.64', 'James Chester', 'Fazlinda Kassim']) {
+  if (source.includes(confidentialDetail)) {
+    throw new Error(`Confidential offer detail published: ${confidentialDetail}`);
+  }
+}
+
+if (source.includes('student-success-kicker')) {
+  throw new Error('Student Success must use a combined heading instead of a separate kicker.');
+}
+
+const recommendationRequirements = [
+  'reference-letter-card',
+  'Dr Steven Hitchcock 推荐信',
+  'BWIL6215: International Industry Placement Program',
+  '/assets/references/steven-hitchcock-recommendation.pdf',
+  'Academic Reference',
+];
+
+for (const requirement of recommendationRequirements) {
+  if (!source.includes(requirement)) {
+    throw new Error(`Recommendation card is missing: ${requirement}`);
+  }
+}
+
+if (source.indexOf('reference-letter-card') > source.indexOf('student-success-card')) {
+  throw new Error('Recommendation card must appear before Student Success.');
+}
+
+const experienceHighlights = source.slice(source.indexOf('function ExperienceHighlights'), source.indexOf('function Profile'));
+if (!experienceHighlights.includes('/assets/education/usyd-emblem.svg')) {
+  throw new Error('Recommendation card must use the native-gold USYD emblem.');
+}
+
+const referenceCardCss = styles.slice(styles.indexOf('.reference-letter-card {'), styles.indexOf('.student-success-card {'));
+for (const layoutRequirement of [
+  'grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);',
+  'min-height: 300px;',
+  '.reference-letter-mark img',
+  '.reference-letter-action,\n.student-success-action {\n  position: absolute;',
+]) {
+  if (!referenceCardCss.includes(layoutRequirement) && !styles.includes(layoutRequirement)) {
+    throw new Error(`Recommendation card is not aligned with Student Success: ${layoutRequirement}`);
+  }
+}
+
+const officialFeatureHover = styles.indexOf('.official-feature-banner:hover {');
+const officialFeatureCss = styles.slice(styles.lastIndexOf('.official-feature-banner {', officialFeatureHover), officialFeatureHover);
+if (!officialFeatureCss.includes('grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);')) {
+  throw new Error('Official feature text must align with the reference and Student Success copy columns.');
+}
+
+for (const profileRequirement of [
+  '我是悉尼大学 Business School 的 Data Analytics 硕士',
+  '跨文化团队协作',
+  '不同国家与文化背景成员',
+]) {
+  if (!source.includes(profileRequirement)) {
+    throw new Error(`Profile update is missing: ${profileRequirement}`);
+  }
+}
+
+for (const resumeRequirement of [
+  'resume-download',
+  'resume-download-label',
+  '下载简历',
+  'aria-label="下载简历 PDF"',
+  '/assets/references/yi-yao-resume.pdf',
+  'download="姚羿-数据分析简历.pdf"',
+  'FileText',
+]) {
+  if (!source.includes(resumeRequirement)) {
+    throw new Error(`Resume download action is missing: ${resumeRequirement}`);
+  }
+}
+
+if (!styles.includes('.resume-download-item {\n  min-height: 58px;')) {
+  throw new Error('Resume icon and label must share one matching bordered rectangle.');
 }
 
 for (const requiredFix of [

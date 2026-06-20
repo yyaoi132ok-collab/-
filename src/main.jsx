@@ -7,11 +7,14 @@ import {
   BarChart3,
   BrainCircuit,
   Database,
+  FileText,
+  Languages,
   LineChart,
   Mail,
   Map,
   ShieldCheck,
   Sparkles,
+  UsersRound,
 } from 'lucide-react';
 import { portfolioData } from './data.js';
 import DotGrid from './DotGrid.jsx';
@@ -99,6 +102,21 @@ const strengths = [
     icon: ShieldCheck,
     title: '指标可信度',
     text: '重视 holdout、误差、Lift、相关性边界，让结论经得起追问。',
+  },
+  {
+    icon: Languages,
+    title: '英语沟通与跨文化协作',
+    text: 'PTE 四项 7 分 · 大学英语六级 510 分 · 具备英文学习、工作沟通与海外协作能力。',
+  },
+  {
+    icon: Sparkles,
+    title: 'AI 应用与快速交付',
+    text: '使用生成式 AI 完成短剧内容制作、Vibe Coding 与个人网站搭建，将想法快速转化为可运行的数字作品。',
+  },
+  {
+    icon: UsersRound,
+    title: '跨文化团队协作',
+    text: '参与由不同国家与文化背景成员组成的项目团队，能在分工、沟通与协作节奏中有效协调，推进共同交付。',
   },
 ];
 
@@ -321,7 +339,9 @@ function usePortfolioMotion() {
         const heading = section.querySelector('.section-heading, .closing-inner');
         const title = heading?.querySelector('h2');
         const eyebrow = heading?.querySelector('.eyebrow');
-        const cards = section.querySelectorAll('.profile-grid > *, .education-grid, .project-card, .magic-bento-card, .closing-actions');
+        const cards = section.querySelectorAll(
+          '.profile-grid > *, .education-grid, .experience-highlights > *, .project-card, .magic-bento-card, .closing-actions',
+        );
 
         // Create entrance states only once the section reaches the viewport.
         // This keeps all content visible during the initial page load.
@@ -464,6 +484,81 @@ function Ticker({ openProject }) {
   );
 }
 
+function ExperienceHighlights() {
+  return (
+    <div className="experience-highlights reveal-item" aria-label="学生工作与官方报道">
+      <a
+        className="reference-letter-card tilt-card"
+        href="/assets/references/steven-hitchcock-recommendation.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className="reference-letter-mark" aria-hidden="true">
+          <img src="/assets/education/usyd-emblem.svg" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div className="reference-letter-copy">
+          <p className="eyebrow">Academic Reference / USYD Business School</p>
+          <h3>Dr Steven Hitchcock 推荐信</h3>
+          <p>悉尼大学商学院高级讲师对国际行业实践表现的正式评价，肯定专业准备、分析思维、沟通协作与国际职业环境适应力。</p>
+          <span>BWIL6215: International Industry Placement Program · 2023</span>
+        </div>
+        <span className="reference-letter-action">
+          预览推荐信 <ArrowUpRight size={18} aria-hidden="true" />
+        </span>
+      </a>
+
+      <article className="student-success-card tilt-card">
+        <div className="student-success-mark" aria-hidden="true">
+          <img src="/assets/education/utas-emblem-gold.png" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div className="student-success-content">
+          <p className="eyebrow">Student Employment</p>
+          <h3>海外学生工作｜Student Success Leader</h3>
+          <p className="student-success-meta">University of Tasmania · Chinese Outreach · 2022</p>
+          <ul>
+            <li>主动联系需要额外支持的学生</li>
+            <li>提供升学、就业、实习与校园支持资源的转介</li>
+            <li>提供中文学生跨文化支持与沟通</li>
+          </ul>
+        </div>
+        <a
+          className="student-success-action"
+          href="/assets/references/utas-student-success-offer.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          预览 Offer <ArrowUpRight size={18} aria-hidden="true" />
+        </a>
+      </article>
+
+      <a
+        className="official-feature-banner tilt-card"
+        href="https://mp.weixin.qq.com/s/hgu61u2-5xiz6NrdqE1w3Q"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className="official-feature-mark" aria-hidden="true">
+          <img src="/assets/education/swu-emblem-gold.png" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div className="official-feature-copy">
+          <p className="eyebrow">OFFICIAL FEATURE / 西南大学西塔学院</p>
+          <h3>海外学子风采｜姚羿：为明天谱写新的可能</h3>
+          <p>本科阶段的学习表现、学生组织经历与海外升学成果获母校官方公众号专题报道，呈现优秀学子与榜样角色。</p>
+          <div className="official-feature-tags" aria-label="报道重点">
+            <span>校长激励奖一等奖</span>
+            <span>2+2 国际培养</span>
+            <span>学生组织与协作</span>
+            <span>海外升学</span>
+          </div>
+        </div>
+        <span className="official-feature-action">
+          阅读专题报道 <ArrowUpRight size={18} aria-hidden="true" />
+        </span>
+      </a>
+    </div>
+  );
+}
+
 function Profile({ openProject }) {
   const statActions = [
     () => document.querySelector('.education-grid')?.scrollIntoView({ behavior: 'smooth', block: 'center' }),
@@ -491,7 +586,7 @@ function Profile({ openProject }) {
         </div>
         <div className="bio-panel tilt-card reveal-item">
           <p className="bio-lead">
-            我毕业于悉尼大学 Business School 的 Data Analytics 硕士，具有西南大学电子信息工程本科背景，项目经历覆盖海外市场分析、信贷风控、公益捐赠优化与教育空间数据分析。
+            我是悉尼大学 Business School 的 Data Analytics 硕士，具有西南大学电子信息工程本科背景，项目经历覆盖海外市场分析、信贷风控、公益捐赠优化与教育空间数据分析。
           </p>
           <p>
             我的优势不是只把图做出来，而是从业务目标反推数据结构、指标口径和故事线：哪些地区先进入，哪些客户更高风险，哪些页面影响转化，哪些地区最需要服务补位。
@@ -526,6 +621,7 @@ function Profile({ openProject }) {
           </article>
         ))}
       </div>
+      <ExperienceHighlights />
     </section>
   );
 }
@@ -1185,6 +1281,18 @@ function Contact() {
           </a>
           <a className="closing-action" href="tel:15340554050">15340554050</a>
           <span className="closing-action">微信 YYaoi001</span>
+          <a
+            className="resume-download-item"
+            href="/assets/references/yi-yao-resume.pdf"
+            download="姚羿-数据分析简历.pdf"
+            aria-label="下载简历 PDF"
+            title="下载简历 PDF"
+          >
+            <span className="resume-download">
+              <FileText size={21} aria-hidden="true" />
+            </span>
+            <span className="resume-download-label">下载简历</span>
+          </a>
         </div>
       </div>
       <Sparkles className="closing-mark" size={180} aria-hidden="true" />
