@@ -7,6 +7,7 @@ import {
   BarChart3,
   BrainCircuit,
   Database,
+  Languages,
   LineChart,
   Mail,
   Map,
@@ -99,6 +100,16 @@ const strengths = [
     icon: ShieldCheck,
     title: '指标可信度',
     text: '重视 holdout、误差、Lift、相关性边界，让结论经得起追问。',
+  },
+  {
+    icon: Languages,
+    title: '英语沟通与跨文化协作',
+    text: 'PTE 四项 7 分 · 大学英语六级 510 分 · 具备英文学习、工作沟通与海外协作能力。',
+  },
+  {
+    icon: Sparkles,
+    title: 'AI 应用与快速交付',
+    text: '使用生成式 AI 完成短剧内容制作、Vibe Coding 与个人网站搭建，将想法快速转化为可运行的数字作品。',
   },
 ];
 
