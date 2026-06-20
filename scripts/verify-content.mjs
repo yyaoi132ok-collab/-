@@ -13,6 +13,7 @@ const requiredAssets = [
   "public/assets/education/swu-bg.svg",
   "public/assets/references/steven-hitchcock-recommendation.pdf",
   "public/assets/references/utas-student-success-offer.pdf",
+  "public/assets/references/yi-yao-resume.pdf",
   "public/data/nyc-boroughs.geojson",
   "public/data/aedc-lga-map.geojson"
 ];
@@ -331,6 +332,18 @@ for (const profileRequirement of [
 ]) {
   if (!source.includes(profileRequirement)) {
     throw new Error(`Profile update is missing: ${profileRequirement}`);
+  }
+}
+
+for (const resumeRequirement of [
+  'resume-download',
+  'aria-label="下载简历 PDF"',
+  '/assets/references/yi-yao-resume.pdf',
+  'download="姚羿-数据分析简历.pdf"',
+  'FileText',
+]) {
+  if (!source.includes(resumeRequirement)) {
+    throw new Error(`Resume download action is missing: ${resumeRequirement}`);
   }
 }
 
