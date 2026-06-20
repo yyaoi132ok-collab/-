@@ -321,7 +321,9 @@ function usePortfolioMotion() {
         const heading = section.querySelector('.section-heading, .closing-inner');
         const title = heading?.querySelector('h2');
         const eyebrow = heading?.querySelector('.eyebrow');
-        const cards = section.querySelectorAll('.profile-grid > *, .education-grid, .project-card, .magic-bento-card, .closing-actions');
+        const cards = section.querySelectorAll(
+          '.profile-grid > *, .education-grid, .experience-highlights > *, .project-card, .magic-bento-card, .closing-actions',
+        );
 
         // Create entrance states only once the section reaches the viewport.
         // This keeps all content visible during the initial page load.
@@ -464,6 +466,53 @@ function Ticker({ openProject }) {
   );
 }
 
+function ExperienceHighlights() {
+  return (
+    <div className="experience-highlights reveal-item" aria-label="学生工作与官方报道">
+      <article className="student-success-card tilt-card">
+        <div className="student-success-mark" aria-hidden="true">
+          <img src="/assets/education/utas-emblem-gold.png" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div className="student-success-content">
+          <p className="eyebrow">Student Employment</p>
+          <h3>Student Success Leader</h3>
+          <p className="student-success-meta">University of Tasmania · Chinese Outreach · 2022</p>
+          <ul>
+            <li>主动联系需要额外支持的学生</li>
+            <li>提供升学、就业、实习与校园支持资源的转介</li>
+            <li>提供中文学生跨文化支持与沟通</li>
+          </ul>
+        </div>
+      </article>
+
+      <a
+        className="official-feature-banner tilt-card"
+        href="https://mp.weixin.qq.com/s/hgu61u2-5xiz6NrdqE1w3Q"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className="official-feature-mark" aria-hidden="true">
+          <img src="/assets/education/swu-emblem-gold.png" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div className="official-feature-copy">
+          <p className="eyebrow">OFFICIAL FEATURE / 西南大学西塔学院</p>
+          <h3>海外学子风采｜姚羿：为明天谱写新的可能</h3>
+          <p>本科阶段的学习表现、学生组织经历与海外升学成果获母校官方公众号专题报道，呈现优秀学子与榜样角色。</p>
+          <div className="official-feature-tags" aria-label="报道重点">
+            <span>校长激励奖一等奖</span>
+            <span>2+2 国际培养</span>
+            <span>学生组织与协作</span>
+            <span>海外升学</span>
+          </div>
+        </div>
+        <span className="official-feature-action">
+          阅读专题报道 <ArrowUpRight size={18} aria-hidden="true" />
+        </span>
+      </a>
+    </div>
+  );
+}
+
 function Profile({ openProject }) {
   const statActions = [
     () => document.querySelector('.education-grid')?.scrollIntoView({ behavior: 'smooth', block: 'center' }),
@@ -526,6 +575,7 @@ function Profile({ openProject }) {
           </article>
         ))}
       </div>
+      <ExperienceHighlights />
     </section>
   );
 }
