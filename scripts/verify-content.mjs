@@ -295,6 +295,22 @@ if (source.indexOf('reference-letter-card') > source.indexOf('student-success-ca
   throw new Error('Recommendation card must appear before Student Success.');
 }
 
+const experienceHighlights = source.slice(source.indexOf('function ExperienceHighlights'), source.indexOf('function Profile'));
+if (!experienceHighlights.includes('/assets/education/usyd-emblem.svg')) {
+  throw new Error('Recommendation card must use the native-gold USYD emblem.');
+}
+
+const referenceCardCss = styles.slice(styles.indexOf('.reference-letter-card {'), styles.indexOf('.student-success-card {'));
+for (const layoutRequirement of [
+  'grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);',
+  'min-height: 300px;',
+  '.reference-letter-mark img',
+]) {
+  if (!referenceCardCss.includes(layoutRequirement) && !styles.includes(layoutRequirement)) {
+    throw new Error(`Recommendation card is not aligned with Student Success: ${layoutRequirement}`);
+  }
+}
+
 for (const profileRequirement of [
   '我是悉尼大学 Business School 的 Data Analytics 硕士',
   '跨文化团队协作',

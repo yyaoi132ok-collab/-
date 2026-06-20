@@ -7,7 +7,6 @@ import {
   BarChart3,
   BrainCircuit,
   Database,
-  FileText,
   Languages,
   LineChart,
   Mail,
@@ -494,17 +493,17 @@ function ExperienceHighlights() {
         rel="noreferrer"
       >
         <div className="reference-letter-mark" aria-hidden="true">
-          <FileText size={42} strokeWidth={1.3} />
+          <img src="/assets/education/usyd-emblem.svg" alt="" loading="lazy" decoding="async" />
         </div>
         <div className="reference-letter-copy">
           <p className="eyebrow">Academic Reference / USYD Business School</p>
           <h3>Dr Steven Hitchcock 推荐信</h3>
           <p>悉尼大学商学院高级讲师对国际行业实践表现的正式评价，肯定专业准备、分析思维、沟通协作与国际职业环境适应力。</p>
           <span>BWIL6215: International Industry Placement Program · 2023</span>
+          <span className="reference-letter-action">
+            预览推荐信 <ArrowUpRight size={18} aria-hidden="true" />
+          </span>
         </div>
-        <span className="reference-letter-action">
-          预览推荐信 <ArrowUpRight size={18} aria-hidden="true" />
-        </span>
       </a>
 
       <article className="student-success-card tilt-card">
