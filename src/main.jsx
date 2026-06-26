@@ -777,7 +777,7 @@ function InteractiveChart({ chart }) {
   };
 
   return (
-    <article className="chart-card">
+    <article className={chart.type === 'channelPerformance' ? 'chart-card is-wide' : 'chart-card'}>
       <div className="chart-head">
         <h5>{chart.title}</h5>
         <p>{chart.caption}</p>
