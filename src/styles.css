@@ -1380,6 +1380,11 @@ video {
   grid-column: span 2;
 }
 
+.chart-card.is-wide {
+  grid-column: span 2;
+  min-height: 460px;
+}
+
 .chart-card {
   min-height: 420px;
   border: 1px solid rgba(229, 239, 248, 0.12);
@@ -1602,6 +1607,15 @@ video {
   font-size: 13px;
   text-align: right;
   white-space: nowrap;
+}
+
+.chart-card.is-wide .bar-chart {
+  padding-inline: 28px;
+}
+
+.chart-card.is-wide .bar-row {
+  grid-template-columns: minmax(210px, 0.32fr) minmax(360px, 1fr) minmax(118px, auto);
+  gap: 18px;
 }
 
 .bar-row.is-active span,
@@ -2051,10 +2065,20 @@ video {
     grid-column: span 1;
   }
 
+  .chart-card.is-wide {
+    grid-column: span 1;
+    min-height: 320px;
+  }
+
   .chart-card {
     min-height: 320px;
   }
 
+  .chart-card.is-wide .bar-chart {
+    padding-inline: 16px;
+  }
+
+  .chart-card.is-wide .bar-row,
   .bar-row {
     grid-template-columns: minmax(92px, 1fr) minmax(86px, 1fr) auto;
     gap: 8px;
