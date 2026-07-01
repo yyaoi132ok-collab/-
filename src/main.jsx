@@ -507,6 +507,46 @@ function ExperienceHighlights() {
         </span>
       </a>
 
+      <a
+        className="reference-letter-card tilt-card"
+        href="/assets/references/enpak-brian-recommendation.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className="reference-letter-mark" aria-hidden="true">
+          <img src="/assets/projects/enpak/enpak-logo-dark.png" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div className="reference-letter-copy">
+          <p className="eyebrow">Internship Reference / Overseas Startup</p>
+          <h3>海外实习推荐信｜Enpak Social</h3>
+          <p>Enpak 创始人对市场进入策略项目的正式推荐，肯定我用公开数据构建市场情报框架、识别纽约 borough 机会并转化为业务决策建议的能力。</p>
+          <span>Market Intelligence / Launch Strategy · 2026</span>
+        </div>
+        <span className="reference-letter-action">
+          预览推荐信 <ArrowUpRight size={18} aria-hidden="true" />
+        </span>
+      </a>
+
+      <a
+        className="reference-letter-card tilt-card"
+        href="/assets/references/alibaba-recommendation.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className="reference-letter-mark" aria-hidden="true">
+          <img src="/assets/projects/credit/brand-bg.svg" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div className="reference-letter-copy">
+          <p className="eyebrow">Business Reference / Alibaba Group</p>
+          <h3>企业推荐信｜Alibaba Group</h3>
+          <p>来自企业数据分析项目的推荐材料，补充展示我在数据提取、异常分析、建模输出、业务报表与运营决策支持中的交付表现。</p>
+          <span>Data Analytics / Credit Risk Modelling · 2026</span>
+        </div>
+        <span className="reference-letter-action">
+          预览推荐信 <ArrowUpRight size={18} aria-hidden="true" />
+        </span>
+      </a>
+
       <article className="student-success-card tilt-card">
         <div className="student-success-mark" aria-hidden="true">
           <img src="/assets/education/utas-emblem-gold.png" alt="" loading="lazy" decoding="async" />

@@ -12,6 +12,8 @@ const requiredAssets = [
   "public/assets/education/utas-bg.svg",
   "public/assets/education/swu-bg.svg",
   "public/assets/references/steven-hitchcock-recommendation.pdf",
+  "public/assets/references/enpak-brian-recommendation.pdf",
+  "public/assets/references/alibaba-recommendation.pdf",
   "public/assets/references/utas-student-success-offer.pdf",
   "public/assets/references/yi-yao-resume.pdf",
   "public/data/nyc-boroughs.geojson",
@@ -302,6 +304,12 @@ const recommendationRequirements = [
   'BWIL6215: International Industry Placement Program',
   '/assets/references/steven-hitchcock-recommendation.pdf',
   'Academic Reference',
+  '海外实习推荐信｜Enpak Social',
+  'Market Intelligence / Launch Strategy',
+  '/assets/references/enpak-brian-recommendation.pdf',
+  '企业推荐信｜Alibaba Group',
+  'Data Analytics / Credit Risk Modelling',
+  '/assets/references/alibaba-recommendation.pdf',
 ];
 
 for (const requirement of recommendationRequirements) {
@@ -317,6 +325,19 @@ if (source.indexOf('reference-letter-card') > source.indexOf('student-success-ca
 const experienceHighlights = source.slice(source.indexOf('function ExperienceHighlights'), source.indexOf('function Profile'));
 if (!experienceHighlights.includes('/assets/education/usyd-emblem.svg')) {
   throw new Error('Recommendation card must use the native-gold USYD emblem.');
+}
+
+const highlightOrder = [
+  'Dr Steven Hitchcock 推荐信',
+  '海外实习推荐信｜Enpak Social',
+  '企业推荐信｜Alibaba Group',
+  '海外学生工作｜Student Success Leader',
+  '海外学子风采｜姚羿：为明天谱写新的可能',
+];
+for (let index = 1; index < highlightOrder.length; index += 1) {
+  if (experienceHighlights.indexOf(highlightOrder[index - 1]) > experienceHighlights.indexOf(highlightOrder[index])) {
+    throw new Error(`Experience highlight order is wrong: ${highlightOrder[index - 1]} must appear before ${highlightOrder[index]}`);
+  }
 }
 
 const referenceCardCss = styles.slice(styles.indexOf('.reference-letter-card {'), styles.indexOf('.student-success-card {'));
