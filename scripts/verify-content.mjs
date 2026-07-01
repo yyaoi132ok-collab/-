@@ -300,13 +300,15 @@ if (source.includes('student-success-kicker')) {
 
 const recommendationRequirements = [
   'reference-letter-card',
-  'Dr Steven Hitchcock 推荐信',
+  '悉尼大学推荐信｜Dr Steven Hitchcock',
   'BWIL6215: International Industry Placement Program',
   '/assets/references/steven-hitchcock-recommendation.pdf',
   'Academic Reference',
+  'reference-letter-card is-enpak-reference',
   '海外实习推荐信｜Enpak Social',
   'Market Intelligence / Launch Strategy',
   '/assets/references/enpak-brian-recommendation.pdf',
+  '/assets/projects/enpak/enpak-logo.png',
   '企业推荐信｜Alibaba Group',
   'Data Analytics / Credit Risk Modelling',
   '/assets/references/alibaba-recommendation.pdf',
@@ -328,7 +330,7 @@ if (!experienceHighlights.includes('/assets/education/usyd-emblem.svg')) {
 }
 
 const highlightOrder = [
-  'Dr Steven Hitchcock 推荐信',
+  '悉尼大学推荐信｜Dr Steven Hitchcock',
   '海外实习推荐信｜Enpak Social',
   '企业推荐信｜Alibaba Group',
   '海外学生工作｜Student Success Leader',
@@ -345,11 +347,36 @@ for (const layoutRequirement of [
   'grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);',
   'min-height: 300px;',
   '.reference-letter-mark img',
+  '.reference-letter-card.is-enpak-reference .reference-letter-mark img',
   '.reference-letter-action,\n.student-success-action {\n  position: absolute;',
 ]) {
   if (!referenceCardCss.includes(layoutRequirement) && !styles.includes(layoutRequirement)) {
     throw new Error(`Recommendation card is not aligned with Student Success: ${layoutRequirement}`);
   }
+}
+
+const enpakReferenceMarkCss = styles.slice(
+  styles.indexOf('.reference-letter-card.is-enpak-reference .reference-letter-mark {'),
+  styles.indexOf('.reference-letter-card.is-enpak-reference .reference-letter-mark img {'),
+);
+for (const enpakMarkRequirement of ['overflow: hidden;']) {
+  if (!enpakReferenceMarkCss.includes(enpakMarkRequirement)) {
+    throw new Error(`Enpak reference mark must avoid nested image frame lines: ${enpakMarkRequirement}`);
+  }
+}
+
+const enpakReferenceImageCss = styles.slice(
+  styles.indexOf('.reference-letter-card.is-enpak-reference .reference-letter-mark img {'),
+  styles.indexOf('.reference-letter-copy {'),
+);
+for (const enpakImageRequirement of ['width: min(82%, 360px);', 'max-height: 230px;', 'object-fit: contain;']) {
+  if (!enpakReferenceImageCss.includes(enpakImageRequirement)) {
+    throw new Error(`Enpak reference image must avoid nested image frame lines: ${enpakImageRequirement}`);
+  }
+}
+
+if (experienceHighlights.includes('/assets/projects/enpak/enpak-logo-dark.png')) {
+  throw new Error('Enpak reference card must not use the framed dark logo image.');
 }
 
 const officialFeatureHover = styles.indexOf('.official-feature-banner:hover {');
