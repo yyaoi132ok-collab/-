@@ -776,6 +776,16 @@ video {
   filter: drop-shadow(0 14px 28px rgba(215, 181, 109, 0.2));
 }
 
+.reference-letter-card.is-enpak-reference .reference-letter-mark {
+  overflow: hidden;
+}
+
+.reference-letter-card.is-enpak-reference .reference-letter-mark img {
+  width: min(82%, 360px);
+  max-height: 230px;
+  object-fit: contain;
+}
+
 .reference-letter-copy {
   position: relative;
   z-index: 1;
@@ -2000,6 +2010,11 @@ video {
     padding: 28px 28px 0;
     border-right: 0;
     border-bottom: 1px solid rgba(215, 181, 109, 0.16);
+  }
+
+  .reference-letter-card.is-enpak-reference .reference-letter-mark img {
+    width: min(84%, 300px);
+    max-height: 180px;
   }
 
   .reference-letter-copy {
